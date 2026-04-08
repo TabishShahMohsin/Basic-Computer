@@ -19,8 +19,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#TwoXoneMux.circ" name="12"/>
-  <main name="main"/>
+  <main name="Mux2x1"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -53,73 +52,48 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="Mux2x1">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="Mux2x1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelup" val="west"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(120,680)" name="Pin">
+    <comp lib="0" loc="(180,280)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
-      <a name="label" val="S1"/>
+      <a name="label" val="I0"/>
     </comp>
-    <comp lib="0" loc="(160,680)" name="Pin">
+    <comp lib="0" loc="(190,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="I1"/>
+    </comp>
+    <comp lib="0" loc="(350,710)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="S0"/>
     </comp>
-    <comp lib="0" loc="(60,180)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="I0"/>
-    </comp>
-    <comp lib="0" loc="(60,230)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="I1"/>
-    </comp>
-    <comp lib="0" loc="(60,320)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="I2"/>
-    </comp>
-    <comp lib="0" loc="(60,370)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="I3"/>
-    </comp>
-    <comp lib="0" loc="(890,240)" name="Pin">
+    <comp lib="0" loc="(770,330)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Y"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="12" loc="(450,180)" name="twoXoneMultiplexer"/>
-    <comp lib="12" loc="(450,320)" name="twoXoneMultiplexer"/>
-    <comp lib="12" loc="(830,240)" name="twoXoneMultiplexer"/>
-    <wire from="(120,670)" to="(120,680)"/>
-    <wire from="(120,670)" to="(210,670)"/>
-    <wire from="(160,220)" to="(160,360)"/>
-    <wire from="(160,220)" to="(230,220)"/>
-    <wire from="(160,360)" to="(160,680)"/>
-    <wire from="(160,360)" to="(230,360)"/>
-    <wire from="(210,450)" to="(210,670)"/>
-    <wire from="(210,450)" to="(560,450)"/>
-    <wire from="(450,180)" to="(540,180)"/>
-    <wire from="(450,320)" to="(540,320)"/>
-    <wire from="(540,180)" to="(540,240)"/>
-    <wire from="(540,240)" to="(610,240)"/>
-    <wire from="(540,260)" to="(540,320)"/>
-    <wire from="(540,260)" to="(610,260)"/>
-    <wire from="(560,280)" to="(560,450)"/>
-    <wire from="(560,280)" to="(610,280)"/>
-    <wire from="(60,180)" to="(230,180)"/>
-    <wire from="(60,230)" to="(80,230)"/>
-    <wire from="(60,320)" to="(230,320)"/>
-    <wire from="(60,370)" to="(80,370)"/>
-    <wire from="(610,240)" to="(620,240)"/>
-    <wire from="(610,260)" to="(620,260)"/>
-    <wire from="(610,280)" to="(620,280)"/>
-    <wire from="(80,200)" to="(230,200)"/>
-    <wire from="(80,200)" to="(80,230)"/>
-    <wire from="(80,340)" to="(230,340)"/>
-    <wire from="(80,340)" to="(80,370)"/>
-    <wire from="(830,240)" to="(890,240)"/>
+    <comp lib="1" loc="(390,240)" name="NOT Gate"/>
+    <comp lib="1" loc="(460,260)" name="AND Gate"/>
+    <comp lib="1" loc="(460,400)" name="AND Gate"/>
+    <comp lib="1" loc="(590,330)" name="OR Gate"/>
+    <wire from="(180,280)" to="(410,280)"/>
+    <wire from="(190,420)" to="(410,420)"/>
+    <wire from="(350,240)" to="(350,380)"/>
+    <wire from="(350,240)" to="(360,240)"/>
+    <wire from="(350,380)" to="(350,710)"/>
+    <wire from="(350,380)" to="(410,380)"/>
+    <wire from="(390,240)" to="(410,240)"/>
+    <wire from="(460,260)" to="(510,260)"/>
+    <wire from="(460,400)" to="(510,400)"/>
+    <wire from="(510,260)" to="(510,310)"/>
+    <wire from="(510,310)" to="(540,310)"/>
+    <wire from="(510,350)" to="(510,400)"/>
+    <wire from="(510,350)" to="(540,350)"/>
+    <wire from="(590,330)" to="(770,330)"/>
   </circuit>
 </project>

@@ -5,7 +5,6 @@
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -19,7 +18,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="twoXoneMultiplexer"/>
+  <lib desc="file#Half_Adder.circ" name="12"/>
+  <main name="Full_Adder"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -52,48 +52,52 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="twoXoneMultiplexer">
+  <circuit name="Full_Adder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="twoXoneMultiplexer"/>
+    <a name="circuit" val="Full_Adder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="clabelup" val="west"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(180,280)" name="Pin">
+    <comp lib="0" loc="(110,220)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I0"/>
+      <a name="label" val="P"/>
     </comp>
-    <comp lib="0" loc="(190,420)" name="Pin">
+    <comp lib="0" loc="(110,240)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I1"/>
+      <a name="label" val="Q"/>
     </comp>
-    <comp lib="0" loc="(350,710)" name="Pin">
+    <comp lib="0" loc="(460,380)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
-      <a name="label" val="S0"/>
+      <a name="label" val="R"/>
     </comp>
-    <comp lib="0" loc="(770,330)" name="Pin">
+    <comp lib="0" loc="(970,240)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="Y"/>
+      <a name="label" val="C"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(390,240)" name="NOT Gate"/>
-    <comp lib="1" loc="(460,260)" name="AND Gate"/>
-    <comp lib="1" loc="(460,400)" name="AND Gate"/>
-    <comp lib="1" loc="(590,330)" name="OR Gate"/>
-    <wire from="(180,280)" to="(410,280)"/>
-    <wire from="(190,420)" to="(410,420)"/>
-    <wire from="(350,240)" to="(350,380)"/>
-    <wire from="(350,240)" to="(360,240)"/>
-    <wire from="(350,380)" to="(350,710)"/>
-    <wire from="(350,380)" to="(410,380)"/>
-    <wire from="(390,240)" to="(410,240)"/>
-    <wire from="(460,260)" to="(510,260)"/>
-    <wire from="(460,400)" to="(510,400)"/>
-    <wire from="(510,260)" to="(510,310)"/>
-    <wire from="(510,310)" to="(540,310)"/>
-    <wire from="(510,350)" to="(510,400)"/>
-    <wire from="(510,350)" to="(540,350)"/>
-    <wire from="(590,330)" to="(770,330)"/>
+    <comp lib="0" loc="(970,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="S"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(890,240)" name="OR Gate"/>
+    <comp lib="12" loc="(440,220)" name="Half_Adder"/>
+    <comp lib="12" loc="(790,290)" name="Half_Adder"/>
+    <wire from="(110,220)" to="(220,220)"/>
+    <wire from="(110,240)" to="(220,240)"/>
+    <wire from="(420,220)" to="(440,220)"/>
+    <wire from="(430,240)" to="(440,240)"/>
+    <wire from="(440,220)" to="(840,220)"/>
+    <wire from="(440,240)" to="(570,240)"/>
+    <wire from="(460,310)" to="(460,380)"/>
+    <wire from="(460,310)" to="(570,310)"/>
+    <wire from="(570,240)" to="(570,290)"/>
+    <wire from="(790,290)" to="(820,290)"/>
+    <wire from="(790,310)" to="(970,310)"/>
+    <wire from="(820,260)" to="(820,290)"/>
+    <wire from="(820,260)" to="(840,260)"/>
+    <wire from="(890,240)" to="(970,240)"/>
   </circuit>
 </project>

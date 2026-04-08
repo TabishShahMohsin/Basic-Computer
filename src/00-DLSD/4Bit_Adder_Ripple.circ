@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="fullAdder"/>
+  <main name="Bit4NumberAdder"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -142,9 +142,9 @@
     <wire from="(820,260)" to="(840,260)"/>
     <wire from="(890,240)" to="(970,240)"/>
   </circuit>
-  <circuit name="binNumberAdder">
+  <circuit name="Bit4NumberAdder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="binNumberAdder"/>
+    <a name="circuit" val="Bit4NumberAdder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(100,570)" name="Pin">
@@ -227,7 +227,6 @@
     <wire from="(100,660)" to="(120,660)"/>
     <wire from="(1030,380)" to="(1030,580)"/>
     <wire from="(1030,380)" to="(1050,380)"/>
-    <wire from="(1050,380)" to="(1060,380)"/>
     <wire from="(1050,400)" to="(1050,540)"/>
     <wire from="(120,400)" to="(120,660)"/>
     <wire from="(1270,360)" to="(1330,360)"/>
