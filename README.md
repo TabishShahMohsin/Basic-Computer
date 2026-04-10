@@ -75,6 +75,14 @@
     └── 04-datapath/         # Final integration
         ├── CommonBus.circ         # Wires the registers and memory to the 8x1 Multiplexers
         └── BasicComputer.circ     # The main file: Instantiates CommonBus, ALSU, and MainControlUnit
+└── University/
+    ├── Computer Architecture/    # Building the computer from basic DLSD circuits
+    │   ├── Computer Architecture.pdf # Notes
+    ├── Digital Logic and System Design/    # Building sequential and combinational circuits
+    │   ├── Unit I.pdf # Notes
+    │   ├── Unit II.pdf # Notes
+    │   ├── Unit III.pdf # Notes
+    │   ├── Unit IV.pdf # Notes
 ```
 
 
