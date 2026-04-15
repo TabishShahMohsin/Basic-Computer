@@ -85,14 +85,13 @@
     <comp lib="1" loc="(170,450)" name="NAND Gate">
       <a name="facing" val="south"/>
     </comp>
+    <comp lib="1" loc="(260,520)" name="NOT Gate"/>
     <comp lib="1" loc="(380,270)" name="NAND Gate"/>
     <comp lib="1" loc="(380,460)" name="NAND Gate"/>
     <comp lib="1" loc="(590,290)" name="NAND Gate">
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="1" loc="(600,440)" name="NAND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
+    <comp lib="1" loc="(600,440)" name="NAND Gate"/>
     <wire from="(150,370)" to="(150,390)"/>
     <wire from="(150,370)" to="(170,370)"/>
     <wire from="(170,250)" to="(170,370)"/>
@@ -101,6 +100,7 @@
     <wire from="(170,450)" to="(170,480)"/>
     <wire from="(170,480)" to="(320,480)"/>
     <wire from="(190,370)" to="(190,390)"/>
+    <wire from="(260,520)" to="(440,520)"/>
     <wire from="(280,290)" to="(280,350)"/>
     <wire from="(280,290)" to="(320,290)"/>
     <wire from="(280,350)" to="(280,440)"/>
@@ -125,6 +125,6 @@
     <wire from="(720,440)" to="(830,440)"/>
     <wire from="(80,250)" to="(170,250)"/>
     <wire from="(80,350)" to="(280,350)"/>
-    <wire from="(90,520)" to="(440,520)"/>
+    <wire from="(90,520)" to="(230,520)"/>
   </circuit>
 </project>

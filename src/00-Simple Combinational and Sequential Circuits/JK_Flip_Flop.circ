@@ -84,7 +84,6 @@
       <a name="label" val="QBar"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(330,550)" name="NOT Gate"/>
     <comp lib="1" loc="(370,270)" name="AND Gate">
       <a name="inputs" val="3"/>
     </comp>
@@ -98,7 +97,7 @@
     <wire from="(220,270)" to="(320,270)"/>
     <wire from="(220,350)" to="(280,350)"/>
     <wire from="(230,460)" to="(320,460)"/>
-    <wire from="(230,550)" to="(300,550)"/>
+    <wire from="(230,550)" to="(390,550)"/>
     <wire from="(250,210)" to="(250,250)"/>
     <wire from="(250,210)" to="(810,210)"/>
     <wire from="(250,250)" to="(320,250)"/>
@@ -109,7 +108,6 @@
     <wire from="(280,290)" to="(320,290)"/>
     <wire from="(280,350)" to="(280,440)"/>
     <wire from="(280,440)" to="(320,440)"/>
-    <wire from="(330,550)" to="(390,550)"/>
     <wire from="(370,270)" to="(530,270)"/>
     <wire from="(370,460)" to="(540,460)"/>
     <wire from="(390,440)" to="(390,550)"/>

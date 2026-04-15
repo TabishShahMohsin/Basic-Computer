@@ -84,23 +84,22 @@
       <a name="label" val="QBar"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="1" loc="(310,560)" name="NOT Gate"/>
     <comp lib="1" loc="(380,270)" name="NAND Gate"/>
     <comp lib="1" loc="(380,460)" name="NAND Gate"/>
     <comp lib="1" loc="(590,290)" name="NAND Gate"/>
     <comp lib="1" loc="(600,440)" name="NAND Gate">
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="8" loc="(225,572)" name="Text">
-      <a name="text" val="R"/>
-    </comp>
     <wire from="(220,250)" to="(320,250)"/>
     <wire from="(230,350)" to="(280,350)"/>
     <wire from="(230,480)" to="(320,480)"/>
-    <wire from="(230,560)" to="(420,560)"/>
+    <wire from="(230,560)" to="(280,560)"/>
     <wire from="(280,290)" to="(280,350)"/>
     <wire from="(280,290)" to="(320,290)"/>
     <wire from="(280,350)" to="(280,440)"/>
     <wire from="(280,440)" to="(320,440)"/>
+    <wire from="(310,560)" to="(420,560)"/>
     <wire from="(370,270)" to="(380,270)"/>
     <wire from="(370,460)" to="(380,460)"/>
     <wire from="(380,270)" to="(530,270)"/>

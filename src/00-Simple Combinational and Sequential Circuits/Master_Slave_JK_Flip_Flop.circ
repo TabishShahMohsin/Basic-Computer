@@ -84,6 +84,7 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="Reset"/>
     </comp>
+    <comp lib="1" loc="(270,800)" name="NOT Gate"/>
     <comp lib="1" loc="(360,290)" name="NAND Gate">
       <a name="inputs" val="3"/>
     </comp>
@@ -102,7 +103,7 @@
       <a name="inputs" val="3"/>
     </comp>
     <comp lib="8" loc="(320,835)" name="Text">
-      <a name="text" val="By convention R=0 should reset the circuit to Q=0"/>
+      <a name="text" val="By convention R=1 should reset the circuit to Q=0"/>
     </comp>
     <comp lib="8" loc="(650,185)" name="Text">
       <a name="font" val="SansSerif bold 25"/>
@@ -115,12 +116,13 @@
     <wire from="(180,290)" to="(300,290)"/>
     <wire from="(180,520)" to="(300,520)"/>
     <wire from="(180,660)" to="(270,660)"/>
-    <wire from="(180,800)" to="(390,800)"/>
+    <wire from="(180,800)" to="(240,800)"/>
     <wire from="(270,310)" to="(270,500)"/>
     <wire from="(270,310)" to="(300,310)"/>
     <wire from="(270,500)" to="(270,660)"/>
     <wire from="(270,500)" to="(300,500)"/>
     <wire from="(270,660)" to="(400,660)"/>
+    <wire from="(270,800)" to="(390,800)"/>
     <wire from="(290,230)" to="(1040,230)"/>
     <wire from="(290,230)" to="(290,270)"/>
     <wire from="(290,270)" to="(300,270)"/>
