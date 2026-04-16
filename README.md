@@ -1,6 +1,6 @@
 # Basic-Computer
 ---
-A 16 Bit computer based on the architecture provided in books by Morris Mano, that is able to do simple programs like fibonacci, facotrial, bubble sort and guess the number game. It is an implementation of [DLSD(COC2072)](/University/Syllabus.pdf#page=16) and [Computer Architecture(COC2082)](/University/Syllabus.pdf#page=19).
+A 16 Bit computer based on the architecture provided in books by Morris Mano(Mano Machine), that is able to do simple programs like fibonacci, factorial, bubble sort and guess the number game. It is an implementation of [DLSD(COC2072)](/University/Syllabus.pdf#page=16), [Digital Design & Simulation Lab (COC2922)](/University/Syllabus.pdf#page=30) and [Computer Architecture(COC2082)](/University/Syllabus.pdf#page=19).
 ---
 * Similar project and an excellent resource: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
 * Reference books: 
@@ -15,6 +15,7 @@ A 16 Bit computer based on the architecture provided in books by Morris Mano, th
     * Compiled: 2025-09-07T09:17:48+0200
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
+* Can later extend this to build the processor for [Apple 1](http://visual6502.org/).
 
 ### Capability:
 |Program|Can it do that Right Now?|
@@ -77,14 +78,14 @@ A 16 Bit computer based on the architecture provided in books by Morris Mano, th
 |        ├── CommonBus.circ         # Wires the registers and memory to the 8x1 Multiplexers
 |        └── BasicComputer.circ     # The main file: Instantiates CommonBus, ALSU, and MainControlUnit
 | 
-├── University/
-|    ├── Computer Architecture/    # Building the computer from basic DLSD circuits
-|    │   └── Computer Architecture.pdf 
-|    ├── Digital Logic and System Design/    # Building sequential and combinational circuits
-|    │   ├── Unit I.pdf 
-|    │   ├── Unit II.pdf 
-|    │   ├── Unit III.pdf 
-|    │   └── Unit IV.pdf 
+└── University/
+     ├── Computer Architecture/    # Building the computer from basic DLSD circuits
+     │   └── Computer Architecture.pdf 
+     ├── Digital Logic and System Design/    # Building sequential and combinational circuits
+     │   ├── Unit I.pdf 
+     │   ├── Unit II.pdf 
+     │   ├── Unit III.pdf 
+     └   └── Unit IV.pdf 
 ```
 
 

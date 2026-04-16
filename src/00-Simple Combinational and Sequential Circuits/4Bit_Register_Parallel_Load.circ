@@ -71,42 +71,42 @@
     </comp>
     <comp lib="0" loc="(130,160)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I1"/>
+      <a name="label" val="I0"/>
     </comp>
     <comp lib="0" loc="(130,370)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I2"/>
+      <a name="label" val="I1"/>
     </comp>
     <comp lib="0" loc="(130,600)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I3"/>
+      <a name="label" val="I2"/>
     </comp>
     <comp lib="0" loc="(130,890)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="I4"/>
+      <a name="label" val="I3"/>
     </comp>
     <comp lib="0" loc="(930,180)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="A1"/>
+      <a name="label" val="A0"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(930,390)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="A2"/>
+      <a name="label" val="A1"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(930,620)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="A3"/>
+      <a name="label" val="A2"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(940,910)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="A4"/>
+      <a name="label" val="A3"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(230,240)" name="NOT Gate"/>
