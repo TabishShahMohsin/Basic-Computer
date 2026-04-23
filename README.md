@@ -1,24 +1,24 @@
 # Basic-Computer
 ---
-A 16 Bit computer based on the architecture provided in books by Morris Mano(Mano Machine), that is able to do simple programs like fibonacci, factorial, bubble sort and guess the number game. It is an implementation of [DLSD(COC2072)](/University/Syllabus.pdf#page=16), [Digital Design & Simulation Lab (COC2922)](/University/Syllabus.pdf#page=30) and [Computer Architecture(COC2082)](/University/Syllabus.pdf#page=19).
+Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like fibonacci, factorial, bubble sort and guess the number game. It is an implementation of [Digital Logic and Circuit Design (COC2072)](/University/Syllabus.pdf#page=16), [Digital Design & Simulation Lab (COC2922)](/University/Syllabus.pdf#page=30) and [Computer Architecture (COC2082)](/University/Syllabus.pdf#page=19).
 ---
-* Similar project and an excellent resource: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
-* Reference books: 
+* Similar project: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
+* Books: 
     * Computer System Architecture - M. Morris Mano
     * Digital Logic and Computer Design - M. Morris Mano
 * Note: For looped circuits (Q = f(Q)), the sim may not be able to find the correct state, hence RESET pin is used to make inital Q as 0. Same as setting a base case for recursion.
     * Convention: R=1 should reset with Q=0
-* Remember Logism provides features like getting truth-table, 
+* Logism provides features like getting truth-table, etc.
 * Particulars about the version of Logisim used:
     * Product: Logisim-evolution v4.0.0
     * Runs on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
     * Compiled: 2025-09-07T09:17:48+0200
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
-* Can later extend this to build the processor for [Apple 1](http://visual6502.org/).
+* This can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 
 ### Capability:
-|Program|Can it do that Right Now?|
+|Program|(✔️/✖️)|
 |:---|:---|
 |Fibonacci(x)|✖️| 
 |x!|✖️|
