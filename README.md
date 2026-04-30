@@ -44,7 +44,7 @@
 |    │   ├── 16BitAdder.circ
 |    │   ├── MUX_2x1.circ         
 |    │   ├── MUX_4x1.circ         
-|    │   ├── MUX_8x1.circ         # Crucial: 8 of these make the Common Bus
+|    │   ├── MUX_8x1.circ         # Crucial: 16 of these make the Common Bus
 |    │   ├── Decoder_2x4.circ
 |    │   ├── Decoder_3x8.circ     # Used in Control Unit for opcodes (D0-D7)
 |    │   ├── Decoder_4x16.circ    # Used in Control Unit for timing (T0-T15)
