@@ -1,13 +1,19 @@
 # Basic-Computer
+
+<p>
+  Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like fibonacci, factorial, bubble sort and guess the number game. This repository is an implementation of 
+  <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=16" data-fallback="/University/Syllabus.pdf#page=16">Digital Logic and Circuit Design (COC2072)</a>, 
+  <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=30" data-fallback="/University/Syllabus.pdf#page=30">Digital Design & Simulation Lab (COC2922)</a> and 
+  <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=19" data-fallback="/University/Syllabus.pdf#page=19">Computer Architecture (COC2082)</a>.
+</p>
+
 ---
-Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like fibonacci, factorial, bubble sort and guess the number game. It is an implementation of [Digital Logic and Circuit Design (COC2072)](/University/Syllabus.pdf#page=16), [Digital Design & Simulation Lab (COC2922)](/University/Syllabus.pdf#page=30) and [Computer Architecture (COC2082)](/University/Syllabus.pdf#page=19).
----
-* Similar project: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
 * Books: 
     * Computer System Architecture - M. Morris Mano
     * Digital Logic and Computer Design - M. Morris Mano
+* Similar project: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
+* Lectures: [Bharat Acharya Education (Intel 8085)](https://www.youtube.com/watch?v=oY_ojcLWm80&list=PLfzBO7vcQZ1JTpio2FEeII_70jzAGh6kx&index=13&t=601s)
 * Note: For looped circuits (Q = f(Q)), the sim may not be able to find the correct state, hence RESET pin is used to make inital Q as 0. Same as setting a base case for recursion.
-    * Convention: R=1 should reset with Q=0
 * Logism provides features like getting truth-table, etc.
 * Particulars about the version of Logisim used:
     * Product: Logisim-evolution v4.0.0
@@ -15,7 +21,8 @@ Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is
     * Compiled: 2025-09-07T09:17:48+0200
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
-* This can be later extended to make the processor for [Apple 1](http://visual6502.org/).
+* This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
+* If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
 
 ### Capability:
 |Program|(✔️/✖️)|
