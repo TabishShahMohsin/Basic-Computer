@@ -5,6 +5,7 @@
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -18,7 +19,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="12"/>
+  <main name="Bit1_Logic_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -51,10 +53,68 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="Bit1_Logic_Unit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="Bit1_Logic_Unit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(80,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Ai"/>
+    </comp>
+    <comp lib="0" loc="(80,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Bi"/>
+    </comp>
+    <comp lib="0" loc="(80,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(80,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(810,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Yi"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(430,480)" name="NOT Gate"/>
+    <comp lib="1" loc="(440,240)" name="AND Gate"/>
+    <comp lib="1" loc="(440,320)" name="OR Gate"/>
+    <comp lib="1" loc="(440,400)" name="XOR Gate"/>
+    <comp lib="12" loc="(810,290)" name="Mux4x1"/>
+    <wire from="(260,170)" to="(260,260)"/>
+    <wire from="(260,260)" to="(260,340)"/>
+    <wire from="(260,260)" to="(390,260)"/>
+    <wire from="(260,340)" to="(260,420)"/>
+    <wire from="(260,340)" to="(390,340)"/>
+    <wire from="(260,420)" to="(380,420)"/>
+    <wire from="(300,130)" to="(300,220)"/>
+    <wire from="(300,220)" to="(300,300)"/>
+    <wire from="(300,220)" to="(390,220)"/>
+    <wire from="(300,300)" to="(300,380)"/>
+    <wire from="(300,300)" to="(390,300)"/>
+    <wire from="(300,380)" to="(300,480)"/>
+    <wire from="(300,380)" to="(380,380)"/>
+    <wire from="(300,480)" to="(400,480)"/>
+    <wire from="(430,480)" to="(460,480)"/>
+    <wire from="(440,240)" to="(590,240)"/>
+    <wire from="(440,310)" to="(440,320)"/>
+    <wire from="(440,310)" to="(590,310)"/>
+    <wire from="(440,330)" to="(440,400)"/>
+    <wire from="(440,330)" to="(590,330)"/>
+    <wire from="(460,350)" to="(460,480)"/>
+    <wire from="(460,350)" to="(590,350)"/>
+    <wire from="(480,370)" to="(480,540)"/>
+    <wire from="(480,370)" to="(590,370)"/>
+    <wire from="(500,390)" to="(500,580)"/>
+    <wire from="(500,390)" to="(590,390)"/>
+    <wire from="(590,240)" to="(590,290)"/>
+    <wire from="(80,130)" to="(300,130)"/>
+    <wire from="(80,170)" to="(260,170)"/>
+    <wire from="(80,540)" to="(480,540)"/>
+    <wire from="(80,580)" to="(500,580)"/>
   </circuit>
 </project>
