@@ -23,8 +23,10 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="file#../00-Simple Circuits/Full_Adder.circ" name="12"/>
-  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="13"/>
-  <main name="Bit1_Arithmatic_Unit"/>
+  <lib desc="file#../00-Simple Circuits/16BitMux4x1.circ" name="13"/>
+  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="14"/>
+  <lib desc="file#../00-Simple Circuits/16Bit_Full_Adder.circ" name="15"/>
+  <main name="Bit16_Arithmatic_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -57,48 +59,60 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="Bit1_Arithmatic_Unit">
+  <circuit name="Bit16_Arithmatic_Unit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Bit1_Arithmatic_Unit"/>
+    <a name="circuit" val="Bit16_Arithmatic_Unit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(120,150)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="Bi"/>
+      <a name="label" val="B"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(120,80)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="Ai"/>
+      <a name="label" val="A"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1250,100)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="Ci1"/>
+      <a name="label" val="C_next"/>
       <a name="type" val="output"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1250,240)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="Di"/>
+      <a name="label" val="D"/>
       <a name="type" val="output"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(130,400)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="S1"/>
+      <a name="label" val="S0"/>
     </comp>
     <comp lib="0" loc="(130,450)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="S0"/>
+      <a name="label" val="S1"/>
     </comp>
     <comp lib="0" loc="(130,500)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="Ci"/>
+      <a name="label" val="C_prev"/>
+      <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(390,250)" name="Ground"/>
-    <comp lib="0" loc="(390,300)" name="Constant"/>
-    <comp lib="1" loc="(340,220)" name="NOT Gate"/>
-    <comp lib="12" loc="(1120,160)" name="Full_Adder"/>
-    <comp lib="13" loc="(710,200)" name="Mux4x1"/>
+    <comp lib="0" loc="(390,250)" name="Ground">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(390,300)" name="Constant">
+      <a name="value" val="0xffff"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(340,220)" name="NOT Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="13" loc="(710,200)" name="Bit16Mux4x1"/>
+    <comp lib="15" loc="(1120,160)" name="Bit16_Full_Adder"/>
     <comp lib="8" loc="(1010,260)" name="Text">
       <a name="text" val="Di = Ai + Yi + Ci"/>
     </comp>
@@ -129,125 +143,5 @@
     <wire from="(820,200)" to="(820,500)"/>
     <wire from="(820,200)" to="(900,200)"/>
     <wire from="(900,80)" to="(900,160)"/>
-  </circuit>
-  <circuit name="Arithmetic_Unit">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Arithmetic_Unit"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(440,230)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="A0"/>
-    </comp>
-    <comp lib="0" loc="(440,250)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="0" loc="(440,310)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Cin"/>
-    </comp>
-    <comp lib="0" loc="(440,410)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="A1"/>
-    </comp>
-    <comp lib="0" loc="(440,430)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="B1"/>
-    </comp>
-    <comp lib="0" loc="(440,590)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="A2"/>
-    </comp>
-    <comp lib="0" loc="(440,610)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="B2"/>
-    </comp>
-    <comp lib="0" loc="(440,770)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="A3"/>
-    </comp>
-    <comp lib="0" loc="(440,790)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="B3"/>
-    </comp>
-    <comp lib="0" loc="(660,250)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="D0"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(660,430)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="D1"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(660,610)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="D2"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(660,770)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Cout"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(660,790)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="D3"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(80,60)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="S1"/>
-    </comp>
-    <comp lib="0" loc="(80,90)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="S0"/>
-    </comp>
-    <comp lib="8" loc="(381,86)" name="Text">
-      <a name="text" val="No use for this, for now."/>
-    </comp>
-    <comp loc="(660,230)" name="Bit1_Arithmatic_Unit"/>
-    <comp loc="(660,410)" name="Bit1_Arithmatic_Unit"/>
-    <comp loc="(660,590)" name="Bit1_Arithmatic_Unit"/>
-    <comp loc="(660,770)" name="Bit1_Arithmatic_Unit"/>
-    <wire from="(100,290)" to="(100,470)"/>
-    <wire from="(100,290)" to="(440,290)"/>
-    <wire from="(100,470)" to="(100,650)"/>
-    <wire from="(100,470)" to="(440,470)"/>
-    <wire from="(100,650)" to="(100,830)"/>
-    <wire from="(100,650)" to="(440,650)"/>
-    <wire from="(100,830)" to="(440,830)"/>
-    <wire from="(100,90)" to="(100,290)"/>
-    <wire from="(150,270)" to="(150,450)"/>
-    <wire from="(150,270)" to="(440,270)"/>
-    <wire from="(150,450)" to="(150,630)"/>
-    <wire from="(150,450)" to="(440,450)"/>
-    <wire from="(150,60)" to="(150,270)"/>
-    <wire from="(150,630)" to="(150,810)"/>
-    <wire from="(150,630)" to="(440,630)"/>
-    <wire from="(150,810)" to="(440,810)"/>
-    <wire from="(400,360)" to="(400,490)"/>
-    <wire from="(400,360)" to="(720,360)"/>
-    <wire from="(400,490)" to="(440,490)"/>
-    <wire from="(400,540)" to="(400,670)"/>
-    <wire from="(400,540)" to="(720,540)"/>
-    <wire from="(400,670)" to="(440,670)"/>
-    <wire from="(400,720)" to="(400,850)"/>
-    <wire from="(400,720)" to="(720,720)"/>
-    <wire from="(400,850)" to="(440,850)"/>
-    <wire from="(660,230)" to="(720,230)"/>
-    <wire from="(660,410)" to="(720,410)"/>
-    <wire from="(660,590)" to="(720,590)"/>
-    <wire from="(720,230)" to="(720,360)"/>
-    <wire from="(720,410)" to="(720,540)"/>
-    <wire from="(720,590)" to="(720,720)"/>
-    <wire from="(80,60)" to="(150,60)"/>
-    <wire from="(80,90)" to="(100,90)"/>
   </circuit>
 </project>
