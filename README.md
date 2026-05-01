@@ -21,6 +21,8 @@
     * Compiled: 2025-09-07T09:17:48+0200
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
+* We may create Memory from scratch as well, but logisim allows us to load programs using Hex files.
+* This repo was made, so that everything feels very accesible, however logisim doesn't allow a library to be used if it was used in an already imported library. So if you are trying to re-create this probably make everything in a single file with different circuits.
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
 
@@ -111,8 +113,8 @@
 | | Step Simulation | `Ctrl` + `I` | `Cmd` + `I` |
 | | Auto-Tick (Clock) | `Ctrl` + `K` | `Cmd` + `K` |
 | | Tick Half Cycle | `Ctrl` + `T` | `Cmd` + `T` |
-| **View** | Zoom In | `Ctrl` + `+` | Not working on macOS| 
+| **View** | Zoom In | `Ctrl` + `+` | - | 
 | | Zoom Out | `Ctrl` + `-` | `Control` + `-` |
-| | Reset Zoom / Zoom to Fit | `Ctrl` + `0` | Not working on macOS |
+| | Reset Zoom / Zoom to Fit | `Ctrl` + `0` | - |
 | **Canvas** | Change Component Facing | `Arrow Keys` (↑, ↓, ←, →) | `Arrow Keys` (↑, ↓, ←, →) |
 | | Add to Selection | `Shift` + Click | `Shift` + Click |
