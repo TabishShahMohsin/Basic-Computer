@@ -11,6 +11,9 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
     </tool>
+    <tool name="Power">
+      <a name="facing" val="south"/>
+    </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
@@ -25,6 +28,7 @@
   <lib desc="#Soc" name="11"/>
   <lib desc="file#Arithmetic_Unit.circ" name="12"/>
   <lib desc="file#Logic_Unit.circ" name="13"/>
+  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="14"/>
   <main name="Bit16_ALSU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -80,30 +84,6 @@
     <comp lib="0" loc="(1010,880)" name="Bit Extender">
       <a name="in_width" val="1"/>
     </comp>
-    <comp lib="0" loc="(1140,150)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="1"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="incoming" val="16"/>
-    </comp>
-    <comp lib="0" loc="(1190,140)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="C_next"/>
-      <a name="type" val="output"/>
-    </comp>
     <comp lib="0" loc="(1470,420)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -111,12 +91,10 @@
       <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(230,740)" name="Pin">
+    <comp lib="0" loc="(200,740)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="C_prev"/>
     </comp>
-    <comp lib="0" loc="(230,820)" name="Ground"/>
-    <comp lib="0" loc="(230,920)" name="Ground"/>
     <comp lib="0" loc="(450,560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="A"/>
@@ -126,6 +104,13 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="B"/>
       <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(630,1100)" name="Ground"/>
+    <comp lib="0" loc="(910,1080)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="C_next"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(1000,740)" name="NOT Gate">
       <a name="facing" val="north"/>
@@ -157,6 +142,7 @@
     </comp>
     <comp lib="12" loc="(840,190)" name="Bit16_Arithmatic_Unit"/>
     <comp lib="13" loc="(840,410)" name="Bit16_Logic_Unit"/>
+    <comp lib="14" loc="(860,1080)" name="Mux4x1"/>
     <comp lib="8" loc="(1005,100)" name="Text">
       <a name="text" val="ALSU is just a combinational circuit that performs all the provided operations, and the one required is chosen."/>
     </comp>
@@ -204,8 +190,7 @@
     <wire from="(1120,480)" to="(1200,480)"/>
     <wire from="(1120,560)" to="(1120,780)"/>
     <wire from="(1120,560)" to="(1200,560)"/>
-    <wire from="(1160,140)" to="(1190,140)"/>
-    <wire from="(120,1010)" to="(950,1010)"/>
+    <wire from="(120,1010)" to="(480,1010)"/>
     <wire from="(120,680)" to="(530,680)"/>
     <wire from="(120,690)" to="(550,690)"/>
     <wire from="(120,700)" to="(140,700)"/>
@@ -220,20 +205,35 @@
     <wire from="(1340,440)" to="(1340,540)"/>
     <wire from="(1390,420)" to="(1470,420)"/>
     <wire from="(140,700)" to="(140,970)"/>
-    <wire from="(140,970)" to="(920,970)"/>
+    <wire from="(140,970)" to="(450,970)"/>
     <wire from="(20,150)" to="(20,760)"/>
     <wire from="(20,150)" to="(900,150)"/>
     <wire from="(20,760)" to="(230,760)"/>
+    <wire from="(200,740)" to="(210,740)"/>
+    <wire from="(210,740)" to="(210,820)"/>
+    <wire from="(210,740)" to="(230,740)"/>
+    <wire from="(210,820)" to="(210,920)"/>
+    <wire from="(210,820)" to="(230,820)"/>
+    <wire from="(210,920)" to="(230,920)"/>
     <wire from="(30,520)" to="(30,840)"/>
     <wire from="(30,520)" to="(480,520)"/>
     <wire from="(30,840)" to="(230,840)"/>
     <wire from="(30,840)" to="(30,900)"/>
     <wire from="(30,900)" to="(230,900)"/>
+    <wire from="(450,1180)" to="(640,1180)"/>
     <wire from="(450,560)" to="(480,560)"/>
     <wire from="(450,610)" to="(500,610)"/>
     <wire from="(450,740)" to="(590,740)"/>
+    <wire from="(450,760)" to="(640,760)"/>
     <wire from="(450,820)" to="(860,820)"/>
-    <wire from="(450,900)" to="(880,900)"/>
+    <wire from="(450,840)" to="(590,840)"/>
+    <wire from="(450,900)" to="(560,900)"/>
+    <wire from="(450,920)" to="(880,920)"/>
+    <wire from="(450,970)" to="(450,1180)"/>
+    <wire from="(450,970)" to="(920,970)"/>
+    <wire from="(480,1010)" to="(480,1160)"/>
+    <wire from="(480,1010)" to="(950,1010)"/>
+    <wire from="(480,1160)" to="(640,1160)"/>
     <wire from="(480,190)" to="(480,410)"/>
     <wire from="(480,190)" to="(620,190)"/>
     <wire from="(480,410)" to="(480,520)"/>
@@ -251,11 +251,18 @@
     <wire from="(550,250)" to="(620,250)"/>
     <wire from="(550,470)" to="(550,690)"/>
     <wire from="(550,470)" to="(620,470)"/>
+    <wire from="(560,1140)" to="(640,1140)"/>
+    <wire from="(560,900)" to="(560,1140)"/>
+    <wire from="(590,1120)" to="(640,1120)"/>
     <wire from="(590,270)" to="(590,740)"/>
     <wire from="(590,270)" to="(620,270)"/>
+    <wire from="(590,840)" to="(590,1120)"/>
+    <wire from="(630,1100)" to="(640,1100)"/>
+    <wire from="(640,760)" to="(640,1080)"/>
     <wire from="(840,190)" to="(900,190)"/>
     <wire from="(840,210)" to="(860,210)"/>
     <wire from="(840,410)" to="(860,410)"/>
+    <wire from="(860,1080)" to="(910,1080)"/>
     <wire from="(860,210)" to="(860,280)"/>
     <wire from="(860,280)" to="(1200,280)"/>
     <wire from="(860,360)" to="(1200,360)"/>
@@ -263,8 +270,7 @@
     <wire from="(860,440)" to="(1200,440)"/>
     <wire from="(860,440)" to="(860,820)"/>
     <wire from="(880,520)" to="(1200,520)"/>
-    <wire from="(880,520)" to="(880,900)"/>
-    <wire from="(900,150)" to="(1140,150)"/>
+    <wire from="(880,520)" to="(880,920)"/>
     <wire from="(900,150)" to="(900,190)"/>
     <wire from="(920,820)" to="(920,970)"/>
     <wire from="(920,820)" to="(970,820)"/>
@@ -301,8 +307,16 @@
       <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="0" loc="(520,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="O_prev"/>
+      <a name="type" val="output"/>
+    </comp>
     <wire from="(180,610)" to="(400,610)"/>
     <wire from="(240,560)" to="(320,560)"/>
+    <wire from="(340,370)" to="(340,400)"/>
+    <wire from="(340,370)" to="(520,370)"/>
     <wire from="(340,410)" to="(400,410)"/>
     <wire from="(340,420)" to="(400,420)"/>
     <wire from="(340,430)" to="(400,430)"/>
@@ -326,6 +340,11 @@
     <a name="circuit" val="ShiftLeft"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(210,590)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="O_next"/>
+      <a name="type" val="output"/>
+    </comp>
     <comp lib="0" loc="(240,560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="O"/>
@@ -352,6 +371,7 @@
       <a name="facing" val="west"/>
       <a name="label" val="I_prev"/>
     </comp>
+    <wire from="(210,590)" to="(400,590)"/>
     <wire from="(240,560)" to="(320,560)"/>
     <wire from="(340,360)" to="(340,400)"/>
     <wire from="(340,360)" to="(480,360)"/>
@@ -370,6 +390,7 @@
     <wire from="(340,530)" to="(400,530)"/>
     <wire from="(340,540)" to="(400,540)"/>
     <wire from="(340,550)" to="(400,550)"/>
+    <wire from="(400,560)" to="(400,590)"/>
     <wire from="(420,400)" to="(460,400)"/>
   </circuit>
 </project>
