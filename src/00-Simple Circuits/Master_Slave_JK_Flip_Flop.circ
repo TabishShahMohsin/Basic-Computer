@@ -72,13 +72,13 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="J"/>
     </comp>
+    <comp lib="0" loc="(180,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CP"/>
+    </comp>
     <comp lib="0" loc="(180,520)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="K"/>
-    </comp>
-    <comp lib="0" loc="(180,660)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="CP"/>
     </comp>
     <comp lib="0" loc="(180,800)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -114,14 +114,14 @@
     <wire from="(1040,230)" to="(1040,440)"/>
     <wire from="(1040,440)" to="(1100,440)"/>
     <wire from="(180,290)" to="(300,290)"/>
+    <wire from="(180,400)" to="(270,400)"/>
     <wire from="(180,520)" to="(300,520)"/>
-    <wire from="(180,660)" to="(270,660)"/>
     <wire from="(180,800)" to="(240,800)"/>
-    <wire from="(270,310)" to="(270,500)"/>
+    <wire from="(270,310)" to="(270,400)"/>
     <wire from="(270,310)" to="(300,310)"/>
-    <wire from="(270,500)" to="(270,660)"/>
+    <wire from="(270,400)" to="(270,500)"/>
+    <wire from="(270,400)" to="(370,400)"/>
     <wire from="(270,500)" to="(300,500)"/>
-    <wire from="(270,660)" to="(400,660)"/>
     <wire from="(270,800)" to="(390,800)"/>
     <wire from="(290,230)" to="(1040,230)"/>
     <wire from="(290,230)" to="(290,270)"/>
@@ -131,6 +131,8 @@
     <wire from="(290,580)" to="(1010,580)"/>
     <wire from="(360,290)" to="(410,290)"/>
     <wire from="(360,520)" to="(410,520)"/>
+    <wire from="(370,400)" to="(370,660)"/>
+    <wire from="(370,660)" to="(400,660)"/>
     <wire from="(390,470)" to="(390,800)"/>
     <wire from="(390,470)" to="(500,470)"/>
     <wire from="(390,800)" to="(830,800)"/>

@@ -18,8 +18,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#JK_Flip_Flop.circ" name="12"/>
-  <lib desc="file#Master_Slave_JK_Flip_Flop.circ" name="13"/>
+  <lib desc="file#Master_Slave_JK_Flip_Flop.circ" name="12"/>
+  <lib desc="file#JK_Flip_Flop.circ" name="13"/>
   <main name="Bit4_Counter"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -82,20 +82,23 @@
       <a name="label" val="A3"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="0" loc="(360,220)" name="Constant"/>
-    <comp lib="0" loc="(380,360)" name="Clock">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(310,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="INR"/>
+    </comp>
+    <comp lib="0" loc="(380,360)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="label" val="CP"/>
     </comp>
     <comp lib="0" loc="(420,1180)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="Reset"/>
+      <a name="label" val="CLR"/>
     </comp>
-    <comp lib="13" loc="(880,220)" name="Master_Slave_Flip_Flop"/>
-    <comp lib="13" loc="(880,420)" name="Master_Slave_Flip_Flop"/>
-    <comp lib="13" loc="(880,620)" name="Master_Slave_Flip_Flop"/>
-    <comp lib="13" loc="(880,820)" name="Master_Slave_Flip_Flop"/>
-    <wire from="(360,220)" to="(620,220)"/>
+    <comp lib="12" loc="(880,220)" name="Master_Slave_Flip_Flop"/>
+    <comp lib="12" loc="(880,420)" name="Master_Slave_Flip_Flop"/>
+    <comp lib="12" loc="(880,620)" name="Master_Slave_Flip_Flop"/>
+    <comp lib="12" loc="(880,820)" name="Master_Slave_Flip_Flop"/>
+    <wire from="(310,220)" to="(620,220)"/>
     <wire from="(380,360)" to="(490,360)"/>
     <wire from="(420,1180)" to="(540,1180)"/>
     <wire from="(490,260)" to="(490,360)"/>

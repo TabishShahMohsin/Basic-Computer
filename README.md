@@ -14,7 +14,7 @@
 * Similar project: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
 * Lectures: [Bharat Acharya Education (Intel 8085)](https://www.youtube.com/watch?v=oY_ojcLWm80&list=PLfzBO7vcQZ1JTpio2FEeII_70jzAGh6kx&index=13&t=601s)
 * Note: For looped circuits (Q = f(Q)), the sim may not be able to find the correct state, hence RESET pin is used to make inital Q as 0. Same as setting a base case for recursion.
-* Logism provides features like getting truth-table, etc.
+* Logism provides features like getting truth-table, running txt-tests, etc.
 * Particulars about the version of Logisim used:
     * Product: Logisim-evolution v4.0.0
     * Runs on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
@@ -22,9 +22,12 @@
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
 * We may create Memory from scratch as well, but logisim allows us to load programs using Hex files.
-* This repo was made, so that everything feels very accesible, however logisim doesn't allow a library to be used if it was used in an already imported library. So if you are trying to re-create this probably make everything in a single file with different circuits.
+* This repo was made such that everything feels very accesible, however logisim doesn't allow a library to be used if it was used in an already imported library. So if you are trying to re-create this probably should make everything in a single file with different circuits. Or forcefully import by writing the import statement in the .circ file.
+* Pin order in logisim of the imported circuit depends on the build circuit.
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
+
+
 
 ### Capability:
 |Program|(✔️/✖️)|
@@ -33,6 +36,8 @@
 |x!|✖️|
 |Bubble Sort|✖️| 
 |Guess the Number Game|✖️| 
+
+
 
 ### Structure:
 ```text
@@ -96,6 +101,7 @@
      │   ├── Unit III.pdf 
      └   └── Unit IV.pdf 
 ```
+
 
 
 ### Logisim Shortcuts: 😅
