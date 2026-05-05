@@ -1,0 +1,41 @@
+<svg width="600" height="525" xmlns="http://www.w3.org/2000/svg">
+  <style>text { font-family: sans-serif; font-size: 12px; fill: black; }</style>
+  
+  <!-- Solid White Background -->
+  <rect width="600" height="525" fill="white" />
+  
+  <!-- Table Lines -->
+  <path d="M10 10 h580 M10 40 h580 M10 70 h580 M10 100 h580 M10 130 h580 M10 160 h580 M10 190 h580 M10 220 h580 M10 250 h580 M10 280 h580 M10 310 h580 M10 340 h580 M10 370 h580 M10 400 h580 M10 430 h580 M10 460 h580 M10 490 h580 M10 515 h580" stroke="black" fill="none" />
+  <path d="M10 10 v505 M110 10 v505 M300 10 v505 M450 10 v505 M590 10 v505" stroke="black" fill="none" />
+
+  <!-- Headers -->
+  <text x="15" y="30" font-weight="bold">Category</text>
+  <text x="115" y="30" font-weight="bold">Action</text>
+  <text x="305" y="30" font-weight="bold">Windows / Linux</text>
+  <text x="455" y="30" font-weight="bold">macOS</text>
+
+  <!-- Rows -->
+  <g>
+    <text x="15" y="60">Tools</text><text x="115" y="60">Poke Tool</text><text x="305" y="60">Ctrl + 1</text><text x="455" y="60">Cmd + 1</text>
+    <text x="115" y="90">Edit/Select</text><text x="305" y="90">Ctrl + 2</text><text x="455" y="90">Cmd + 2</text>
+    <text x="115" y="120">Text Tool</text><text x="305" y="120">Ctrl + 3</text><text x="455" y="120">Cmd + 3</text>
+    
+    <text x="15" y="150">File</text><text x="115" y="150">Quit / Exit</text><text x="305" y="150">Ctrl + Q</text><text x="455" y="150">Cmd + Q</text>
+    
+    <text x="15" y="180">Edit</text><text x="115" y="180">Redo</text><text x="305" y="180">Ctrl + Y</text><text x="455" y="180">Cmd+Shft+Z</text>
+    <text x="115" y="210">Duplicate</text><text x="305" y="210">Ctrl + D</text><text x="455" y="210">Cmd + D</text>
+    
+    <text x="15" y="240">Simulation</text><text x="115" y="240">Enable/Disable</text><text x="305" y="240">Ctrl + E</text><text x="455" y="240">Cmd + E</text>
+    <text x="115" y="270">Reset Sim</text><text x="305" y="270">Ctrl + R</text><text x="455" y="270">Cmd + R</text>
+    <text x="115" y="300">Step Sim</text><text x="305" y="300">Ctrl + I</text><text x="455" y="300">Cmd + I</text>
+    <text x="115" y="330">Auto-Tick</text><text x="305" y="330">Ctrl + K</text><text x="455" y="330">Cmd + K</text>
+    <text x="115" y="360">Tick Half</text><text x="305" y="360">Ctrl + T</text><text x="455" y="360">Cmd + T</text>
+    
+    <text x="15" y="390">View</text><text x="115" y="390">Zoom In</text><text x="305" y="390">Ctrl + +</text><text x="455" y="390">-</text>
+    <text x="115" y="420">Zoom Out</text><text x="305" y="420">Ctrl + -</text><text x="455" y="420">Control + -</text>
+    <text x="115" y="450">Reset Zoom</text><text x="305" y="450">Ctrl + 0</text><text x="455" y="450">-</text>
+    
+    <text x="15" y="480">Canvas</text><text x="115" y="480">Change Facing</text><text x="305" y="480">Arrows</text><text x="455" y="480">Arrows</text>
+    <text x="115" y="510">Add Selection</text><text x="305" y="510">Shift + Click</text><text x="455" y="510">Shift + Click</text>
+  </g>
+</svg>

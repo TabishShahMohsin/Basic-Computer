@@ -1,19 +1,23 @@
 # Basic-Computer
 
 <p>
-  Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like fibonacci, factorial, bubble sort and guess the number game. This repository is an implementation of 
+  Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like Fibonacci, Factorial, Bubble Sort and Guess the Number Game. This repository is an implementation of 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=16" data-fallback="/University/Syllabus.pdf#page=16">Digital Logic and Circuit Design (COC2072)</a>, 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=30" data-fallback="/University/Syllabus.pdf#page=30">Digital Design & Simulation Lab (COC2922)</a> and 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=19" data-fallback="/University/Syllabus.pdf#page=19">Computer Architecture (COC2082)</a>.
 </p>
 
 ---
+
+<!--GIF of the Fibonacci sequence running
+-->
+
 * Books: 
     * Computer System Architecture - M. Morris Mano
     * Digital Logic and Computer Design - M. Morris Mano
-* Similar project: [comptuer-8bits](https://github.com/leonicolas/computer-8bits)
+* Similar project: [computer-8bits](https://github.com/leonicolas/computer-8bits)
 * Lectures: [Bharat Acharya Education (Intel 8085)](https://www.youtube.com/watch?v=oY_ojcLWm80&list=PLfzBO7vcQZ1JTpio2FEeII_70jzAGh6kx&index=13&t=601s)
-* Note: For looped circuits (Q = f(Q)), the sim may not be able to find the correct state, hence RESET pin is used to make inital Q as 0. Same as setting a base case for recursion.
+* Note: For looped circuits ($Q = f(Q)$), the sim may not be able to find the correct state, hence RESET pin is used to make initial Q as 0 - similar to setting a base case for recursion.
 * Logism provides features like getting truth-table, running txt-tests, etc.
 * Particulars about the version of Logisim used:
     * Product: Logisim-evolution v4.0.0
@@ -22,24 +26,22 @@
     * Build ID: main/00b4b30e
     * Built on: Java HotSpot(TM) 64-Bit Server VM v21.0.4
 * We may create Memory from scratch as well, but logisim allows us to load programs using Hex files.
-* This repo was made such that everything feels very accesible, however logisim doesn't allow a library to be used if it was used in an already imported library. So if you are trying to re-create this probably should make everything in a single file with different circuits. Or forcefully import by writing the import statement in the .circ file.
+* This repo was made such that everything feels very accessible, however logisim doesn't allow a library to be used if it was used in an already imported library. So if you are trying to re-create this probably should make everything in a single file with different circuits. Or forcefully import by writing the import statement in the .circ file.
+* A picture is worth a thousand gates.
 * Pin order in logisim of the imported circuit depends on the build circuit.
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
 
 
-
-### Capability:
-|Program|(✔️/✖️)|
-|:---|:---|
-|Fibonacci(x)|✖️| 
-|x!|✖️|
-|Bubble Sort|✖️| 
-|Guess the Number Game|✖️| 
+## How to Run
+1. Ensure you have [Logisim-evolution v4.0.0+](https://github.com/logisim-evolution/logisim-evolution) installed.
+2. Clone this repo.
+3. Open `src/04-datapath/BasicComputer.circ`.
+4. To run a program: Right-click the RAM component -> **Load Image** -> Select your `.hex` file.
+5. Press `Ctrl + K` to start the execution.
 
 
-
-### Structure:
+## Structure:
 ```text
 ├── .gitignore
 ├── README.md
@@ -101,26 +103,3 @@
      │   ├── Unit III.pdf 
      └   └── Unit IV.pdf 
 ```
-
-
-
-### Logisim Shortcuts: 😅
-
-| Category | Action | Windows / Linux | macOS |
-| :--- | :--- | :--- | :--- |
-| **Tools** | Poke Tool | `Ctrl` + `1` | `Cmd` + `1` |
-| | Edit / Select Tool | `Ctrl` + `2` | `Cmd` + `2` |
-| | Text Tool | `Ctrl` + `3` | `Cmd` + `3` |
-| **File** | Quit / Exit | `Ctrl` + `Q` | `Cmd` + `Q` |
-| **Edit** | Redo | `Ctrl` + `Y` | `Cmd` + `Shift` + `Z` |
-| | Duplicate Selection | `Ctrl` + `D` | `Cmd` + `D` |
-| **Simulation**| Enable/Disable Simulation | `Ctrl` + `E` | `Cmd` + `E` |
-| | Reset Simulation | `Ctrl` + `R` | `Cmd` + `R` |
-| | Step Simulation | `Ctrl` + `I` | `Cmd` + `I` |
-| | Auto-Tick (Clock) | `Ctrl` + `K` | `Cmd` + `K` |
-| | Tick Half Cycle | `Ctrl` + `T` | `Cmd` + `T` |
-| **View** | Zoom In | `Ctrl` + `+` | - | 
-| | Zoom Out | `Ctrl` + `-` | `Control` + `-` |
-| | Reset Zoom / Zoom to Fit | `Ctrl` + `0` | - |
-| **Canvas** | Change Component Facing | `Arrow Keys` (↑, ↓, ←, →) | `Arrow Keys` (↑, ↓, ←, →) |
-| | Add to Selection | `Shift` + Click | `Shift` + Click |
