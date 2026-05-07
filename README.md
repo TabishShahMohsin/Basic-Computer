@@ -15,9 +15,9 @@
 * Books: 
     * Computer System Architecture - M. Morris Mano
     * Digital Logic and Computer Design - M. Morris Mano
-* Similar project: [computer-8bits](https://github.com/leonicolas/computer-8bits)
+<!-- * Similar project: [computer-8bits](https://github.com/leonicolas/computer-8bits) -->
 * Lectures: [Bharat Acharya Education (Intel 8085)](https://www.youtube.com/watch?v=oY_ojcLWm80&list=PLfzBO7vcQZ1JTpio2FEeII_70jzAGh6kx&index=13&t=601s)
-* Note: For looped circuits ($Q = f(Q)$), the sim may not be able to find the correct state, hence RESET pin is used to make initial Q as 0 - similar to setting a base case for recursion.
+* Note: For looped circuits $(Q = f(Q))$, the sim may not be able to find the correct state, hence RESET pin is used to make initial Q as 0 - similar to setting a base case for recursion.
 * Logism provides features like getting truth-table, running txt-tests, etc.
 * Particulars about the version of Logisim used:
     * Product: Logisim-evolution v4.0.0
@@ -31,6 +31,7 @@
 * Pin order in logisim of the imported circuit depends on the build circuit.
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
+* Computer Specifics: Von Neumann Architecture, Accumulator-Based (Leaning toward CISC), Hardwired Control Unit, Isolated I/O, Fixed-Length Instructions, 4K Words (8KB RAM), SISD (Single Instruction Single Data), 
 
 
 ## How to Run
