@@ -3,6 +3,10 @@
   This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
     </tool>
@@ -242,7 +246,7 @@
     <wire from="(200,960)" to="(240,960)"/>
     <wire from="(210,570)" to="(210,910)"/>
     <wire from="(210,570)" to="(840,570)"/>
-    <wire from="(210,910)" to="(410,910)"/>
+    <wire from="(210,910)" to="(310,910)"/>
     <wire from="(230,1080)" to="(270,1080)"/>
     <wire from="(230,600)" to="(230,1080)"/>
     <wire from="(230,600)" to="(840,600)"/>
@@ -252,7 +256,7 @@
     <wire from="(250,640)" to="(250,870)"/>
     <wire from="(250,640)" to="(840,640)"/>
     <wire from="(250,870)" to="(290,870)"/>
-    <wire from="(270,1080)" to="(310,1080)"/>
+    <wire from="(270,1080)" to="(330,1080)"/>
     <wire from="(270,460)" to="(270,1080)"/>
     <wire from="(270,460)" to="(840,460)"/>
     <wire from="(280,1000)" to="(320,1000)"/>
@@ -261,9 +265,9 @@
     <wire from="(290,500)" to="(290,870)"/>
     <wire from="(290,500)" to="(840,500)"/>
     <wire from="(290,870)" to="(370,870)"/>
-    <wire from="(310,1080)" to="(330,1080)"/>
-    <wire from="(310,390)" to="(310,1080)"/>
+    <wire from="(310,390)" to="(310,910)"/>
     <wire from="(310,390)" to="(840,390)"/>
+    <wire from="(310,910)" to="(410,910)"/>
     <wire from="(320,1000)" to="(440,1000)"/>
     <wire from="(320,410)" to="(320,1000)"/>
     <wire from="(320,410)" to="(840,410)"/>

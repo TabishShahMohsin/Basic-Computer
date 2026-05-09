@@ -1,14 +1,15 @@
-CP CLR IR[16] ARLD PCINR IRLD READ DRLD ACLD SC_INR ARE PCE DRE ACE IRE MEME
-0  1   0x2004 0 0 0 0 0 0 0 0 0 0 0 0 0
-# T0: AR <- PC (Bus Source PC = 010, PCE=1, ARLD=1)
-1  0   0x2004 1 0 0 0 0 0 1 0 1 0 0 0 0
-# T1: IR <- M[AR], PC <- PC + 1 (Bus Source Mem = 111, MEME=1, IRLD=1, PCINR=1)
-1  0   0x2004 0 1 1 0 0 0 1 0 0 0 0 0 1
-# T2: AR <- IR(0-11) (Bus Source IR = 101, IRE=1, ARLD=1)
-1  0   0x2004 1 0 0 0 0 0 1 0 0 0 0 1 0
-# T3: Idle (Direct Addressing)
-1  0   0x2004 0 0 0 0 0 0 1 0 0 0 0 0 0
-# T4: DR <- M[AR] (Bus Source Mem = 111, MEME=1, DRLD=1, READ=1)
-1  0   0x2004 0 0 0 1 1 0 1 0 0 0 0 0 1
-# T5: AC <- DR, SC <- 0 (ACLD=1, SC_CLR triggered by logic)
-1  0   0x2004 0 0 0 0 0 1 1 0 0 1 0 0 0
+CLR SC[4] IR[16] ARLD PCINR IRLD READ DRLD ACLD ARE PCE DRE ACE IRE MEME
+# Reset the system: All control signals must be 0
+1   0x0  0x2004   0    0     0    0    0    0    0   0   0   0   0   0
+# T0: AR <- PC | Bus: PC(010), ARLD=1, PCE=1
+0   0x0  0x2004   1    0     0    0    0    0    0   1   0   0   0   0
+# T1: IR <- M[AR], PC <- PC+1 | Bus: Memory(111), IRLD=1, PCINR=1, READ=1, MEME=1
+0   0x1  0x2004   0    1     1    1    0    0    0   0   0   0   0   1
+# T2: AR <- IR(0-11) | Bus: IR(101), ARLD=1, IRE=1
+0   0x2  0x2004   1    0     0    0    0    0    0   0   0   0   1   0
+# T3: Decode / Idle (Direct Addressing, I=0) | All signals 0
+0   0x3  0x2004   0    0     0    0    0    0    0   0   0   0   0   0
+# T4: DR <- M[AR] | Bus: Memory(111), DRLD=1, READ=1, MEME=1
+0   0x4  0x2004   0    0     0    1    1    0    0   0   0   0   0   1
+# T5: AC <- DR | Bus: DR(011), ACLD=1, DRE=1
+0   0x5  0x2004   0    0     0    0    0    1    0   0   1   0   0   0
