@@ -1,0 +1,14 @@
+CP CLR IR[16] ARLD PCINR IRLD READ DRLD ACLD SC_INR ARE PCE DRE ACE IRE MEME
+0  1   0x2004 0 0 0 0 0 0 0 0 0 0 0 0 0
+# T0: AR <- PC (Bus Source PC = 010, PCE=1, ARLD=1)
+1  0   0x2004 1 0 0 0 0 0 1 0 1 0 0 0 0
+# T1: IR <- M[AR], PC <- PC + 1 (Bus Source Mem = 111, MEME=1, IRLD=1, PCINR=1)
+1  0   0x2004 0 1 1 0 0 0 1 0 0 0 0 0 1
+# T2: AR <- IR(0-11) (Bus Source IR = 101, IRE=1, ARLD=1)
+1  0   0x2004 1 0 0 0 0 0 1 0 0 0 0 1 0
+# T3: Idle (Direct Addressing)
+1  0   0x2004 0 0 0 0 0 0 1 0 0 0 0 0 0
+# T4: DR <- M[AR] (Bus Source Mem = 111, MEME=1, DRLD=1, READ=1)
+1  0   0x2004 0 0 0 1 1 0 1 0 0 0 0 0 1
+# T5: AC <- DR, SC <- 0 (ACLD=1, SC_CLR triggered by logic)
+1  0   0x2004 0 0 0 0 0 1 1 0 0 1 0 0 0

@@ -22,16 +22,16 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#IR.circ" name="12"/>
-  <lib desc="file#TR.circ" name="13"/>
-  <lib desc="file#../00-Simple Circuits/Decoders.circ" name="14"/>
-  <lib desc="file#AR.circ" name="15"/>
-  <lib desc="file#../00-Simple Circuits/4Bit_Counter.circ" name="16"/>
-  <lib desc="file#PC.circ" name="17"/>
-  <lib desc="file#Mem.circ" name="18"/>
-  <lib desc="file#AC.circ" name="19"/>
-  <lib desc="file#EnableFFs.circ" name="20"/>
-  <lib desc="file#DR.circ" name="21"/>
+  <lib desc="file#../00-Simple Circuits/Decoders.circ" name="12"/>
+  <lib desc="file#../00-Simple Circuits/4Bit_Counter.circ" name="13"/>
+  <lib desc="file#TR.circ" name="14"/>
+  <lib desc="file#Mem.circ" name="15"/>
+  <lib desc="file#IR.circ" name="16"/>
+  <lib desc="file#AR.circ" name="17"/>
+  <lib desc="file#DR.circ" name="18"/>
+  <lib desc="file#PC.circ" name="19"/>
+  <lib desc="file#AC.circ" name="20"/>
+  <lib desc="file#EnableFFs.circ" name="21"/>
   <main name="Control_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -277,24 +277,24 @@
       <a name="facing" val="south"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="12" loc="(2220,1670)" name="IR_ControlUnit"/>
-    <comp lib="13" loc="(2220,2410)" name="TR_ControlUnit"/>
-    <comp lib="14" loc="(340,640)" name="Decoder3x8">
+    <comp lib="12" loc="(340,640)" name="Decoder3x8">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="14" loc="(900,3440)" name="Decoder4x16">
+    <comp lib="12" loc="(900,3440)" name="Decoder4x16">
       <a name="facing" val="north"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="15" loc="(2220,1260)" name="AR_ControlUnit"/>
-    <comp lib="16" loc="(880,3700)" name="Bit4_Counter">
+    <comp lib="13" loc="(880,3700)" name="Bit4_Counter">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="17" loc="(2220,2130)" name="PC_ControlUnit"/>
-    <comp lib="18" loc="(2220,1800)" name="Mem_ControlUnit"/>
-    <comp lib="19" loc="(2220,990)" name="AC_ControlUnit"/>
-    <comp lib="20" loc="(2220,2650)" name="EnableControlUnit"/>
-    <comp lib="21" loc="(2220,1480)" name="DR_ControlUnit"/>
+    <comp lib="14" loc="(2220,2410)" name="TR_ControlUnit"/>
+    <comp lib="15" loc="(2220,1800)" name="Mem_ControlUnit"/>
+    <comp lib="16" loc="(2220,1670)" name="IR_ControlUnit"/>
+    <comp lib="17" loc="(2220,1260)" name="AR_ControlUnit"/>
+    <comp lib="18" loc="(2220,1480)" name="DR_ControlUnit"/>
+    <comp lib="19" loc="(2220,2130)" name="PC_ControlUnit"/>
+    <comp lib="20" loc="(2220,990)" name="AC_ControlUnit"/>
+    <comp lib="21" loc="(2220,2650)" name="EnableControlUnit"/>
     <comp lib="8" loc="(1015,3570)" name="Text">
       <a name="text" val="T"/>
     </comp>
@@ -313,11 +313,13 @@
     <comp lib="8" loc="(270,495)" name="Text">
       <a name="text" val="Operation Decoder"/>
     </comp>
+    <wire from="(1000,1050)" to="(1000,1580)"/>
+    <wire from="(1000,1050)" to="(2000,1050)"/>
     <wire from="(1000,1580)" to="(1000,2770)"/>
     <wire from="(1000,1580)" to="(2000,1580)"/>
     <wire from="(1000,2770)" to="(1000,3440)"/>
     <wire from="(1000,2770)" to="(2000,2770)"/>
-    <wire from="(1000,620)" to="(1000,1580)"/>
+    <wire from="(1000,620)" to="(1000,1050)"/>
     <wire from="(1020,2000)" to="(1020,2850)"/>
     <wire from="(1020,2000)" to="(2000,2000)"/>
     <wire from="(1020,2850)" to="(1020,3440)"/>
@@ -558,8 +560,6 @@
     <wire from="(960,2910)" to="(960,3440)"/>
     <wire from="(960,3660)" to="(960,3670)"/>
     <wire from="(960,620)" to="(960,1300)"/>
-    <wire from="(980,1050)" to="(2000,1050)"/>
-    <wire from="(980,1050)" to="(980,1400)"/>
     <wire from="(980,1400)" to="(2000,1400)"/>
     <wire from="(980,1400)" to="(980,1980)"/>
     <wire from="(980,1980)" to="(2000,1980)"/>
@@ -568,6 +568,6 @@
     <wire from="(980,2190)" to="(980,2690)"/>
     <wire from="(980,2690)" to="(2000,2690)"/>
     <wire from="(980,2690)" to="(980,3440)"/>
-    <wire from="(980,620)" to="(980,1050)"/>
+    <wire from="(980,620)" to="(980,1400)"/>
   </circuit>
 </project>
