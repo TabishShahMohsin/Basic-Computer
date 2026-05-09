@@ -26,13 +26,13 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="file#../01-ALSU/ALSU.circ" name="12"/>
-  <lib desc="file#Registers.circ" name="13"/>
-  <lib desc="file#../03-Control-Unit/Control_Unit.circ" name="14">
+  <lib desc="file#../00-Simple Circuits/4Bit_Counter.circ" name="13"/>
+  <lib desc="file#Registers.circ" name="14"/>
+  <lib desc="file#../03-Control-Unit/Control_Unit.circ" name="15">
     <tool name="Control_Unit">
       <a name="facing" val="north"/>
     </tool>
   </lib>
-  <lib desc="file#../00-Simple Circuits/4Bit_Counter.circ" name="15"/>
   <main name="CompleteComputer"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -56,7 +56,9 @@
       <a name="type" val="output"/>
     </tool>
     <sep/>
-    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </tool>
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
     <tool lib="1" name="XOR Gate"/>
@@ -271,6 +273,7 @@
       <a name="appearance" val="classic"/>
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(570,1450)" name="Ground"/>
     <comp lib="0" loc="(590,2600)" name="Ground"/>
     <comp lib="1" loc="(1650,750)" name="Controlled Buffer">
       <a name="width" val="12"/>
@@ -294,39 +297,40 @@
       <a name="width" val="16"/>
     </comp>
     <comp lib="12" loc="(790,1390)" name="Bit16_ALSU"/>
-    <comp lib="13" loc="(1410,1160)" name="Bit16_Register">
+    <comp lib="13" loc="(470,2730)" name="Bit4_Counter">
+      <a name="label" val="SC"/>
+    </comp>
+    <comp lib="14" loc="(1410,1160)" name="Bit16_Register">
       <a name="label" val="DR"/>
     </comp>
-    <comp lib="13" loc="(1410,1390)" name="Bit16_Register">
+    <comp lib="14" loc="(1410,1390)" name="Bit16_Register">
       <a name="label" val="AC"/>
     </comp>
-    <comp lib="13" loc="(1410,1560)" name="Bit8_Register">
+    <comp lib="14" loc="(1410,1560)" name="Bit8_Register">
       <a name="label" val="INPR"/>
     </comp>
-    <comp lib="13" loc="(1410,1740)" name="Bit16_Register">
+    <comp lib="14" loc="(1410,1740)" name="Bit16_Register">
       <a name="label" val="IR"/>
     </comp>
-    <comp lib="13" loc="(1410,1920)" name="Bit16_Register">
+    <comp lib="14" loc="(1410,1920)" name="Bit16_Register">
       <a name="label" val="TR"/>
     </comp>
-    <comp lib="13" loc="(1410,2100)" name="Bit8_Register">
+    <comp lib="14" loc="(1410,2100)" name="Bit8_Register">
       <a name="label" val="OUTR"/>
     </comp>
-    <comp lib="13" loc="(1410,750)" name="Bit12_Register">
+    <comp lib="14" loc="(1410,750)" name="Bit12_Register">
       <a name="label" val="AR"/>
     </comp>
-    <comp lib="13" loc="(1410,940)" name="Bit12_Register">
+    <comp lib="14" loc="(1410,940)" name="Bit12_Register">
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="14" loc="(570,2380)" name="Control_Unit">
+    <comp lib="15" loc="(570,2380)" name="Control_Unit">
       <a name="facing" val="north"/>
-    </comp>
-    <comp lib="15" loc="(470,2730)" name="Bit4_Counter">
-      <a name="label" val="SC"/>
     </comp>
     <comp lib="4" loc="(1190,310)" name="RAM">
       <a name="addrWidth" val="12"/>
       <a name="appearance" val="logisim_evolution"/>
+      <a name="asyncread" val="true"/>
       <a name="dataWidth" val="16"/>
     </comp>
     <comp lib="5" loc="(1440,1010)" name="Hex Digit Display"/>
@@ -540,6 +544,7 @@
     <wire from="(1870,1750)" to="(1870,2270)"/>
     <wire from="(1880,1230)" to="(1880,1250)"/>
     <wire from="(1880,1740)" to="(2170,1740)"/>
+    <wire from="(190,2770)" to="(240,2770)"/>
     <wire from="(190,2860)" to="(210,2860)"/>
     <wire from="(1920,1230)" to="(1920,1260)"/>
     <wire from="(1940,1930)" to="(1940,2280)"/>
@@ -603,6 +608,7 @@
     <wire from="(560,750)" to="(1190,750)"/>
     <wire from="(560,750)" to="(560,940)"/>
     <wire from="(560,940)" to="(1190,940)"/>
+    <wire from="(570,2370)" to="(570,2380)"/>
     <wire from="(570,2600)" to="(570,2650)"/>
     <wire from="(570,2650)" to="(1830,2650)"/>
     <wire from="(590,1510)" to="(590,2380)"/>
