@@ -9,6 +9,7 @@
 
 ---
 
+![GIF of Direct Sum](src/Programs/Direct_Memory_Sum.gif)
 <!--GIF of the Fibonacci sequence running
 -->
 

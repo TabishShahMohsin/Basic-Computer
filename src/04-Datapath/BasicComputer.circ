@@ -365,6 +365,7 @@
     <comp lib="5" loc="(1840,1230)" name="Hex Digit Display"/>
     <comp lib="5" loc="(1880,1230)" name="Hex Digit Display"/>
     <comp lib="5" loc="(1920,1230)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(480,2250)" name="Hex Digit Display"/>
     <comp lib="5" loc="(520,2790)" name="Hex Digit Display"/>
     <wire from="(100,2330)" to="(100,2770)"/>
     <wire from="(100,2330)" to="(570,2330)"/>
@@ -585,6 +586,8 @@
     <wire from="(400,2670)" to="(2000,2670)"/>
     <wire from="(400,400)" to="(1190,400)"/>
     <wire from="(400,400)" to="(400,1160)"/>
+    <wire from="(480,2250)" to="(480,2270)"/>
+    <wire from="(480,2270)" to="(530,2270)"/>
     <wire from="(490,2720)" to="(500,2720)"/>
     <wire from="(500,2720)" to="(500,2800)"/>
     <wire from="(500,2720)" to="(570,2720)"/>
@@ -593,8 +596,9 @@
     <wire from="(530,1320)" to="(1420,1320)"/>
     <wire from="(530,1320)" to="(530,1410)"/>
     <wire from="(530,1410)" to="(570,1410)"/>
-    <wire from="(530,1430)" to="(530,2380)"/>
+    <wire from="(530,1430)" to="(530,2270)"/>
     <wire from="(530,1430)" to="(570,1430)"/>
+    <wire from="(530,2270)" to="(530,2380)"/>
     <wire from="(530,2600)" to="(530,2650)"/>
     <wire from="(530,2650)" to="(1830,2650)"/>
     <wire from="(550,1450)" to="(550,2380)"/>
