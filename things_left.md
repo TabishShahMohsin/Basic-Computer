@@ -13,3 +13,4 @@
     * IEEE 754: S EEEEE FFFFFFFFFF
     * Do write all the programs that were taught in the first unit  
 * Fix SC: Connected to one T ahead in control unit to fix reseting before hand.
+* Checking the excel file
