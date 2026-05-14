@@ -90,15 +90,19 @@
     </comp>
     <comp lib="0" loc="(300,330)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="r"/>
+      <a name="label" val="R"/>
     </comp>
     <comp lib="0" loc="(300,370)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="T3"/>
+      <a name="label" val="T2"/>
     </comp>
     <comp lib="0" loc="(300,410)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="B7"/>
+      <a name="label" val="s_r"/>
+    </comp>
+    <comp lib="0" loc="(300,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="p"/>
     </comp>
     <comp lib="0" loc="(300,490)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -127,7 +131,7 @@
     </comp>
     <comp lib="1" loc="(370,610)" name="OR Gate"/>
     <comp lib="1" loc="(470,350)" name="AND Gate"/>
-    <comp lib="1" loc="(470,430)" name="AND Gate"/>
+    <comp lib="1" loc="(470,430)" name="OR Gate"/>
     <comp lib="1" loc="(470,510)" name="AND Gate"/>
     <comp lib="1" loc="(470,590)" name="AND Gate"/>
     <comp lib="1" loc="(470,680)" name="AND Gate"/>
@@ -151,8 +155,9 @@
     <wire from="(200,590)" to="(320,590)"/>
     <wire from="(200,630)" to="(320,630)"/>
     <wire from="(300,330)" to="(420,330)"/>
-    <wire from="(300,370)" to="(400,370)"/>
+    <wire from="(300,370)" to="(420,370)"/>
     <wire from="(300,410)" to="(420,410)"/>
+    <wire from="(300,450)" to="(420,450)"/>
     <wire from="(300,490)" to="(420,490)"/>
     <wire from="(300,530)" to="(420,530)"/>
     <wire from="(300,570)" to="(420,570)"/>
@@ -161,9 +166,6 @@
     <wire from="(370,610)" to="(420,610)"/>
     <wire from="(370,700)" to="(370,810)"/>
     <wire from="(370,700)" to="(420,700)"/>
-    <wire from="(400,370)" to="(400,450)"/>
-    <wire from="(400,370)" to="(420,370)"/>
-    <wire from="(400,450)" to="(420,450)"/>
     <wire from="(470,350)" to="(620,350)"/>
     <wire from="(470,430)" to="(610,430)"/>
     <wire from="(470,510)" to="(630,510)"/>
