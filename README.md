@@ -9,9 +9,7 @@
 
 ---
 
-![GIF of Direct Sum](src/Programs/Direct_Memory_Sum.gif)
-<!--GIF of the Fibonacci sequence running
--->
+![Fibonacci](src/Programs/Fibonacci.mov)
 
 * [Decoded Instructions](https://docs.google.com/spreadsheets/d/1iQ1Zzdj7JYTmBiXy1o-t-n2Hny4eIJqiO4zj733_0VQ/edit?usp=sharing)
 * Books: 

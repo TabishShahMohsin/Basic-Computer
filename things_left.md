@@ -1,11 +1,6 @@
 # Things left to implement:
 
-* Input-Ouput FF
-* The whole Input-Ouput thing, including FGI, FGO, Interrupt Cycle, etc, R.
-* Computer isn't halting for some reason
-* Carry from the ALU (E)
 * Cleaning:
-    * Adding Pictures for every circuit corresponding to it
     * Didn't know spacing for splitters could be adjusted
 * Making multiple programs:
     * Having program, GIF, txt file for each prog: Fibonacci, Mul, Add, etc
