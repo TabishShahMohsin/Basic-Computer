@@ -33,7 +33,7 @@
 * Pin order in logisim of the imported circuit depends on the build circuit.
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
-* Computer Specifics: Von Neumann Architecture, Accumulator-Based (Leaning toward CISC), Hardwired Control Unit, Isolated I/O, Fixed-Length Instructions, 4K Words (8KB RAM), SISD (Single Instruction Single Data), 
+* Computer Specifics: Von Neumann Architecture, Accumulator-Based (Leaning toward CISC), Hardwired Control Unit, Isolated I/O, Fixed-Length Instructions, 4K Words (8KB RAM), SISD (Single Instruction Single Data), falling-edge triggering
 
 
 ## How to Run
