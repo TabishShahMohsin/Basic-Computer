@@ -30,18 +30,18 @@
       <a name="facing" val="north"/>
     </tool>
   </lib>
-  <lib desc="file#EnableFFs.circ" name="13"/>
-  <lib desc="file#AR.circ" name="14"/>
-  <lib desc="file#IR.circ" name="15"/>
-  <lib desc="file#TR.circ" name="16"/>
-  <lib desc="file#ALU_Control.circ" name="17"/>
-  <lib desc="file#E.circ" name="18"/>
-  <lib desc="file#SC.circ" name="19"/>
-  <lib desc="file#IO.circ" name="20"/>
-  <lib desc="file#AC.circ" name="21"/>
-  <lib desc="file#Mem.circ" name="22"/>
-  <lib desc="file#DR.circ" name="23"/>
-  <lib desc="file#PC.circ" name="24"/>
+  <lib desc="file#SC.circ" name="13"/>
+  <lib desc="file#IR.circ" name="14"/>
+  <lib desc="file#Mem.circ" name="15"/>
+  <lib desc="file#PC.circ" name="16"/>
+  <lib desc="file#DR.circ" name="17"/>
+  <lib desc="file#IO.circ" name="18"/>
+  <lib desc="file#TR.circ" name="19"/>
+  <lib desc="file#ALU_Control.circ" name="20"/>
+  <lib desc="file#AR.circ" name="21"/>
+  <lib desc="file#E.circ" name="22"/>
+  <lib desc="file#AC.circ" name="23"/>
+  <lib desc="file#EnableFFs.circ" name="24"/>
   <main name="Control_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -445,18 +445,18 @@
     <comp lib="12" loc="(540,540)" name="Decoder3x8">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(3080,3930)" name="Enable_ControlUnit"/>
-    <comp lib="14" loc="(3080,2020)" name="AR_ControlUnit"/>
-    <comp lib="15" loc="(3080,2430)" name="IR_ControlUnit"/>
-    <comp lib="16" loc="(3080,3790)" name="TR_ControlUnit"/>
-    <comp lib="17" loc="(3080,1090)" name="ALSU_ControlUnit"/>
-    <comp lib="18" loc="(3080,4460)" name="E_ControlUnit"/>
-    <comp lib="19" loc="(3080,1360)" name="SC_ControlUnit"/>
-    <comp lib="20" loc="(3090,4770)" name="IO"/>
-    <comp lib="21" loc="(3080,1750)" name="AC_ControlUnit"/>
-    <comp lib="22" loc="(3080,2560)" name="Mem_ControlUnit"/>
-    <comp lib="23" loc="(3080,2240)" name="DR_ControlUnit"/>
-    <comp lib="24" loc="(3080,2890)" name="PC_ControlUnit"/>
+    <comp lib="13" loc="(3080,1360)" name="SC_ControlUnit"/>
+    <comp lib="14" loc="(3080,2430)" name="IR_ControlUnit"/>
+    <comp lib="15" loc="(3080,2560)" name="Mem_ControlUnit"/>
+    <comp lib="16" loc="(3080,2890)" name="PC_ControlUnit"/>
+    <comp lib="17" loc="(3080,2240)" name="DR_ControlUnit"/>
+    <comp lib="18" loc="(3090,4770)" name="IO"/>
+    <comp lib="19" loc="(3080,3790)" name="TR_ControlUnit"/>
+    <comp lib="20" loc="(3080,1090)" name="ALSU_ControlUnit"/>
+    <comp lib="21" loc="(3080,2020)" name="AR_ControlUnit"/>
+    <comp lib="22" loc="(3080,4460)" name="E_ControlUnit"/>
+    <comp lib="23" loc="(3080,1750)" name="AC_ControlUnit"/>
+    <comp lib="24" loc="(3080,3930)" name="Enable_ControlUnit"/>
     <comp lib="8" loc="(1215,5920)" name="Text">
       <a name="text" val="T"/>
     </comp>
@@ -596,6 +596,8 @@
     <wire from="(1550,600)" to="(1550,670)"/>
     <wire from="(1570,650)" to="(1570,670)"/>
     <wire from="(1570,650)" to="(1650,650)"/>
+    <wire from="(1590,1230)" to="(1590,1830)"/>
+    <wire from="(1590,1230)" to="(2860,1230)"/>
     <wire from="(1590,1830)" to="(1590,3190)"/>
     <wire from="(1590,1830)" to="(2860,1830)"/>
     <wire from="(1590,3190)" to="(1590,4170)"/>
@@ -606,7 +608,7 @@
     <wire from="(1590,4770)" to="(2870,4770)"/>
     <wire from="(1590,630)" to="(1590,670)"/>
     <wire from="(1590,630)" to="(1670,630)"/>
-    <wire from="(1590,720)" to="(1590,1830)"/>
+    <wire from="(1590,720)" to="(1590,1230)"/>
     <wire from="(1610,590)" to="(1610,670)"/>
     <wire from="(1610,590)" to="(1690,590)"/>
     <wire from="(1650,650)" to="(1650,670)"/>
@@ -851,7 +853,9 @@
     <wire from="(660,190)" to="(670,190)"/>
     <wire from="(670,150)" to="(670,190)"/>
     <wire from="(680,150)" to="(680,320)"/>
-    <wire from="(690,150)" to="(690,1950)"/>
+    <wire from="(690,1250)" to="(2860,1250)"/>
+    <wire from="(690,1250)" to="(690,1950)"/>
+    <wire from="(690,150)" to="(690,1250)"/>
     <wire from="(690,1950)" to="(2860,1950)"/>
     <wire from="(690,1950)" to="(690,5010)"/>
     <wire from="(690,5010)" to="(2870,5010)"/>

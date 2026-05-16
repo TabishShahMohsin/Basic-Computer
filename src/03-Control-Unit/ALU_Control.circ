@@ -101,12 +101,22 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="D0"/>
     </comp>
+    <comp lib="0" loc="(690,1480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="p"/>
+    </comp>
+    <comp lib="0" loc="(690,1520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B11"/>
+    </comp>
     <comp lib="1" loc="(1090,470)" name="OR Gate"/>
     <comp lib="1" loc="(1130,1040)" name="AND Gate"/>
     <comp lib="1" loc="(1130,740)" name="OR Gate">
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="1" loc="(1140,1300)" name="OR Gate"/>
+    <comp lib="1" loc="(1140,1300)" name="OR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
     <comp lib="1" loc="(850,400)" name="AND Gate"/>
     <comp lib="1" loc="(850,530)" name="AND Gate"/>
     <comp lib="1" loc="(850,640)" name="AND Gate"/>
@@ -114,8 +124,11 @@
     <comp lib="1" loc="(850,800)" name="AND Gate"/>
     <comp lib="1" loc="(900,1230)" name="AND Gate"/>
     <comp lib="1" loc="(900,1360)" name="AND Gate"/>
+    <comp lib="1" loc="(910,1500)" name="AND Gate"/>
     <wire from="(1040,640)" to="(1040,720)"/>
     <wire from="(1040,720)" to="(1080,720)"/>
+    <wire from="(1050,1300)" to="(1050,1500)"/>
+    <wire from="(1050,1300)" to="(1090,1300)"/>
     <wire from="(1080,760)" to="(1080,770)"/>
     <wire from="(1090,470)" to="(1590,470)"/>
     <wire from="(1130,1040)" to="(1610,1040)"/>
@@ -140,6 +153,8 @@
     <wire from="(670,1250)" to="(750,1250)"/>
     <wire from="(670,760)" to="(670,1250)"/>
     <wire from="(670,760)" to="(800,760)"/>
+    <wire from="(690,1480)" to="(860,1480)"/>
+    <wire from="(690,1520)" to="(860,1520)"/>
     <wire from="(710,1430)" to="(740,1430)"/>
     <wire from="(710,380)" to="(710,510)"/>
     <wire from="(710,380)" to="(800,380)"/>
@@ -178,6 +193,7 @@
     <wire from="(910,1280)" to="(1090,1280)"/>
     <wire from="(910,1320)" to="(1090,1320)"/>
     <wire from="(910,1320)" to="(910,1360)"/>
+    <wire from="(910,1500)" to="(1050,1500)"/>
     <wire from="(960,770)" to="(1080,770)"/>
     <wire from="(960,770)" to="(960,800)"/>
   </circuit>

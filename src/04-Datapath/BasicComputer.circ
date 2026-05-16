@@ -25,16 +25,16 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#Registers.circ" name="12"/>
-  <lib desc="file#../01-ALSU/ALSU.circ" name="13"/>
+  <lib desc="file#../00-Simple Circuits/Master_Slave_JK_Flip_Flop.circ" name="12"/>
+  <lib desc="file#Registers.circ" name="13"/>
   <lib desc="file#../00-Simple Circuits/Mux2x1.circ" name="14"/>
   <lib desc="file#../00-Simple Circuits/4Bit_Counter.circ" name="15"/>
-  <lib desc="file#../03-Control-Unit/Control_Unit.circ" name="16">
+  <lib desc="file#../01-ALSU/ALSU.circ" name="16"/>
+  <lib desc="file#../03-Control-Unit/Control_Unit.circ" name="17">
     <tool name="Control_Unit">
       <a name="facing" val="north"/>
     </tool>
   </lib>
-  <lib desc="file#../00-Simple Circuits/Master_Slave_JK_Flip_Flop.circ" name="17"/>
   <main name="CompleteComputer"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -347,51 +347,51 @@
     <comp lib="1" loc="(2210,400)" name="Controlled Buffer">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="12" loc="(1640,1160)" name="Bit16_Register">
+    <comp lib="12" loc="(1640,2280)" name="Master_Slave_Flip_Flop">
+      <a name="label" val="IEN"/>
+    </comp>
+    <comp lib="12" loc="(1640,2450)" name="Master_Slave_Flip_Flop">
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="12" loc="(1640,2620)" name="Master_Slave_Flip_Flop">
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="12" loc="(1640,2790)" name="Master_Slave_Flip_Flop">
+      <a name="label" val="FGI"/>
+    </comp>
+    <comp lib="12" loc="(1640,2970)" name="Master_Slave_Flip_Flop">
+      <a name="label" val="FGO"/>
+    </comp>
+    <comp lib="13" loc="(1640,1160)" name="Bit16_Register">
       <a name="label" val="DR"/>
     </comp>
-    <comp lib="12" loc="(1640,1390)" name="Bit16_Register">
+    <comp lib="13" loc="(1640,1390)" name="Bit16_Register">
       <a name="label" val="AC"/>
     </comp>
-    <comp lib="12" loc="(1640,1560)" name="Bit8_Register">
+    <comp lib="13" loc="(1640,1560)" name="Bit8_Register">
       <a name="label" val="INPR"/>
     </comp>
-    <comp lib="12" loc="(1640,1740)" name="Bit16_Register">
+    <comp lib="13" loc="(1640,1740)" name="Bit16_Register">
       <a name="label" val="IR"/>
     </comp>
-    <comp lib="12" loc="(1640,1920)" name="Bit16_Register">
+    <comp lib="13" loc="(1640,1920)" name="Bit16_Register">
       <a name="label" val="TR"/>
     </comp>
-    <comp lib="12" loc="(1640,2100)" name="Bit8_Register">
+    <comp lib="13" loc="(1640,2100)" name="Bit8_Register">
       <a name="label" val="OUTR"/>
     </comp>
-    <comp lib="12" loc="(1640,750)" name="Bit12_Register">
+    <comp lib="13" loc="(1640,750)" name="Bit12_Register">
       <a name="label" val="AR"/>
     </comp>
-    <comp lib="12" loc="(1640,940)" name="Bit12_Register">
+    <comp lib="13" loc="(1640,940)" name="Bit12_Register">
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="13" loc="(790,1390)" name="Bit16_ALSU"/>
     <comp lib="15" loc="(470,4030)" name="Bit4_Counter">
       <a name="label" val="SC"/>
     </comp>
-    <comp lib="16" loc="(530,3620)" name="Control_Unit">
+    <comp lib="16" loc="(790,1390)" name="Bit16_ALSU"/>
+    <comp lib="17" loc="(530,3620)" name="Control_Unit">
       <a name="facing" val="north"/>
-    </comp>
-    <comp lib="17" loc="(1640,2280)" name="Master_Slave_Flip_Flop">
-      <a name="label" val="IEN"/>
-    </comp>
-    <comp lib="17" loc="(1640,2450)" name="Master_Slave_Flip_Flop">
-      <a name="label" val="S"/>
-    </comp>
-    <comp lib="17" loc="(1640,2620)" name="Master_Slave_Flip_Flop">
-      <a name="label" val="R"/>
-    </comp>
-    <comp lib="17" loc="(1640,2790)" name="Master_Slave_Flip_Flop">
-      <a name="label" val="FGI"/>
-    </comp>
-    <comp lib="17" loc="(1640,2970)" name="Master_Slave_Flip_Flop">
-      <a name="label" val="FGO"/>
     </comp>
     <comp lib="2" loc="(140,1390)" name="Multiplexer">
       <a name="width" val="16"/>
@@ -905,7 +905,7 @@
     <comp lib="1" loc="(420,340)" name="OR Gate">
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="17" loc="(770,300)" name="Master_Slave_Flip_Flop">
+    <comp lib="12" loc="(770,300)" name="Master_Slave_Flip_Flop">
       <a name="label" val="FGO"/>
     </comp>
     <wire from="(200,560)" to="(480,560)"/>
