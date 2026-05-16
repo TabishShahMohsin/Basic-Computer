@@ -3,7 +3,6 @@
 * Cleaning:
     * Didn't know spacing for splitters could be adjusted
 * Making multiple programs:
-    * Having program, GIF, txt file for each prog: Fibonacci, Mul, Add, etc
     * Having an assembler.py: python assembler.py <program_name>.txt
     * IEEE 754: S EEEEE FFFFFFFFFF
     * Do write all the programs that were taught in the first unit  
