@@ -1,7 +1,7 @@
 # Basic-Computer
 
 <p>
-  Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute simple programs like Fibonacci, Factorial, Bubble Sort and Guess the Number Game. This repository is an implementation of 
+  Mano Machine is a 16 Bit computer provided in the books by Morris Mano, which is able to execute programs like Fibonacci, Factorial, and Guess the Number Game. This repository is an implementation of 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=16" data-fallback="/University/Syllabus.pdf#page=16">Digital Logic and Circuit Design (COC2072)</a>, 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=30" data-fallback="/University/Syllabus.pdf#page=30">Digital Design & Simulation Lab (COC2922)</a> and 
   <a href="https://api.amu.ac.in/storage/file/30/under-graduate/syll/1753945183.pdf#page=19" data-fallback="/University/Syllabus.pdf#page=19">Computer Architecture (COC2082)</a>.
@@ -73,11 +73,9 @@
 │   │   ├── SR_Flip_Flop.circ
 │   │   └── T_Flip_Flop.circ
 │   ├── 01-ALSU
-│   │   ├── ALSU_Table.png
 │   │   ├── ALSU_Test.txt
 │   │   ├── ALSU.circ
 │   │   ├── ALSU.png
-│   │   ├── Arithmetic_Unit_Table.png
 │   │   ├── Arithmetic_Unit.circ
 │   │   ├── Arithmetic_Unit.png
 │   │   ├── Logic_Unit.circ
@@ -87,10 +85,8 @@
 │   │   └── Memory.png
 │   ├── 03-Control-Unit
 │   │   ├── AC.circ
-│   │   ├── AC.png
 │   │   ├── ALU_Control.circ
 │   │   ├── AR.circ
-│   │   ├── AR.png
 │   │   ├── Control Functions and Microoperations.png
 │   │   ├── Control_Unit_Test.txt
 │   │   ├── Control_Unit.circ
@@ -98,7 +94,6 @@
 │   │   ├── DR.circ
 │   │   ├── E.circ
 │   │   ├── EnableFFs.circ
-│   │   ├── Instructions.png
 │   │   ├── IO.circ
 │   │   ├── IR.circ
 │   │   ├── Mem.circ
@@ -115,16 +110,19 @@
 │   │   ├── Registers.circ
 │   │   └── Registers.png
 │   └── Programs
-│       ├── 2 Inputs Add and Output.hex
-│       ├── 2 Inputs Add and Output.mov
-│       ├── Echo.hex
-│       ├── Echo.mov
+│       ├── assembler.py
+│       ├── Factorial.asm
+│       ├── Factorial.hex
+│       ├── Factorial.mov
+│       ├── Fibonacci.asm
 │       ├── Fibonacci.hex
 │       ├── Fibonacci.mov
+│       ├── GuessGame.asm
+│       ├── GuessGame.hex
+│       ├── GuessGame.mov
+│       ├── Sum Direct Memory.asm
 │       ├── Sum Direct Memory.hex
-│       ├── Sum Direct Memory.mov
-│       └── test.hex
-├── things_left.md
+│       └── Sum Direct Memory.mov
 └── University
     ├── Computer Architecture
     │   ├── Architecture(Full content from Unit 1 to 4).pdf
@@ -137,6 +135,36 @@
     │   └── Unit IV.pdf
     └── Syllabus.pdf
 
-11 directories, 82 files
+11 directories, 80 files
 
 ```
+
+## Assembler:
+
+
+1. **Write your code**: Save your assembly program as a plain text file (e.g., `program.asm`).
+```assembly
+/ A simple program to add two numbers
+ORG 10
+START,  LDA NUM1   / Load first number into AC
+        ADD NUM2   / Add second number to AC
+        STA RESULT / Store the sum
+        HLT        / Halt execution
+NUM1,   DEC 25     / Store decimal 25
+NUM2,   DEC -5     / Store decimal -5
+RESULT, HEX 0      / Room for the result
+END
+
+```
+
+
+2. **Assemble the code**: Run the python tool from your command line:
+```bash
+python assembler.py program.asm
+
+```
+
+
+3. **Output**: This creates `program.hex`. It automatically starts with `v2.0 raw` and pre-fills unmapped addresses up to your code segment with `0000`, matching exactly what Logisim expects.
+4. **Load into Logisim**: Right-click the **RAM** component in Logisim, choose **Load Image...**, select `program.hex`, and the instruction words will be cleanly populated in your simulation memory.
+
