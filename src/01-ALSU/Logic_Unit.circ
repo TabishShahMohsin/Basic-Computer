@@ -23,8 +23,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#../00-Simple Circuits/16BitMux4x1.circ" name="12"/>
-  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="13"/>
+  <lib desc="file#../00-Simple Circuits/Mux4x1.circ" name="12"/>
+  <lib desc="file#../00-Simple Circuits/16BitMux4x1.circ" name="13"/>
   <main name="Bit16_Logic_Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -100,7 +100,7 @@
     <comp lib="1" loc="(530,400)" name="XOR Gate">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="12" loc="(900,290)" name="Bit16Mux4x1"/>
+    <comp lib="13" loc="(900,290)" name="Bit16Mux4x1"/>
     <wire from="(170,130)" to="(390,130)"/>
     <wire from="(170,170)" to="(350,170)"/>
     <wire from="(170,540)" to="(570,540)"/>

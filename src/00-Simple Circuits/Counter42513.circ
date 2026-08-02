@@ -3,6 +3,10 @@
   This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -92,7 +96,7 @@
     <comp lib="4" loc="(860,370)" name="J-K Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(788,55)" name="Text">
+    <comp lib="8" loc="(785,55)" name="Text">
       <a name="text" val="Design and simulate a self startinng synchronous binary counter that repeateadly counts the sequence 4 2 5 1 3 using JK FF"/>
     </comp>
     <comp loc="(380,170)" name="CombinationalCircuit"/>
@@ -140,76 +144,6 @@
     <wire from="(910,380)" to="(920,380)"/>
     <wire from="(920,140)" to="(920,380)"/>
     <wire from="(920,380)" to="(940,380)"/>
-  </circuit>
-  <circuit name="JK_Flip_Flop">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="JK_Flip_Flop"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,190)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="0" loc="(190,270)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="0" loc="(190,350)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="0" loc="(200,490)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="0" loc="(790,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(790,340)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(400,190)" name="NAND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(400,360)" name="NAND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(580,210)" name="NAND Gate"/>
-    <comp lib="1" loc="(580,340)" name="NAND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <wire from="(190,190)" to="(340,190)"/>
-    <wire from="(190,270)" to="(280,270)"/>
-    <wire from="(190,350)" to="(340,350)"/>
-    <wire from="(200,490)" to="(480,490)"/>
-    <wire from="(240,130)" to="(240,170)"/>
-    <wire from="(240,130)" to="(770,130)"/>
-    <wire from="(240,170)" to="(340,170)"/>
-    <wire from="(240,380)" to="(240,420)"/>
-    <wire from="(240,380)" to="(340,380)"/>
-    <wire from="(240,420)" to="(750,420)"/>
-    <wire from="(280,210)" to="(280,270)"/>
-    <wire from="(280,210)" to="(340,210)"/>
-    <wire from="(280,270)" to="(280,340)"/>
-    <wire from="(280,340)" to="(340,340)"/>
-    <wire from="(400,190)" to="(520,190)"/>
-    <wire from="(400,360)" to="(520,360)"/>
-    <wire from="(480,340)" to="(480,490)"/>
-    <wire from="(480,340)" to="(520,340)"/>
-    <wire from="(490,230)" to="(490,260)"/>
-    <wire from="(490,230)" to="(520,230)"/>
-    <wire from="(490,260)" to="(670,260)"/>
-    <wire from="(490,290)" to="(490,320)"/>
-    <wire from="(490,290)" to="(640,290)"/>
-    <wire from="(490,320)" to="(520,320)"/>
-    <wire from="(580,210)" to="(640,210)"/>
-    <wire from="(580,340)" to="(670,340)"/>
-    <wire from="(640,210)" to="(640,290)"/>
-    <wire from="(640,210)" to="(750,210)"/>
-    <wire from="(670,260)" to="(670,340)"/>
-    <wire from="(670,340)" to="(770,340)"/>
-    <wire from="(750,210)" to="(750,420)"/>
-    <wire from="(750,210)" to="(790,210)"/>
-    <wire from="(770,130)" to="(770,340)"/>
-    <wire from="(770,340)" to="(790,340)"/>
   </circuit>
   <circuit name="CombinationalCircuit">
     <a name="appearance" val="logisim_evolution"/>

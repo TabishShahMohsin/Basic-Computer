@@ -110,12 +110,12 @@
     <a name="circuit" val="Bit16_Full_Adder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(110,220)" name="Pin">
+    <comp lib="0" loc="(110,210)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="P"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(110,240)" name="Pin">
+    <comp lib="0" loc="(110,250)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Q"/>
       <a name="width" val="16"/>
@@ -145,9 +145,12 @@
     </comp>
     <comp loc="(440,220)" name="Bit16_Half_Adder"/>
     <comp loc="(790,290)" name="Bit16_Half_Adder"/>
-    <wire from="(110,220)" to="(220,220)"/>
-    <wire from="(110,240)" to="(220,240)"/>
-    <wire from="(430,240)" to="(440,240)"/>
+    <wire from="(110,210)" to="(120,210)"/>
+    <wire from="(110,250)" to="(120,250)"/>
+    <wire from="(120,210)" to="(120,220)"/>
+    <wire from="(120,220)" to="(220,220)"/>
+    <wire from="(120,240)" to="(120,250)"/>
+    <wire from="(120,240)" to="(220,240)"/>
     <wire from="(440,220)" to="(840,220)"/>
     <wire from="(440,240)" to="(570,240)"/>
     <wire from="(460,310)" to="(460,380)"/>

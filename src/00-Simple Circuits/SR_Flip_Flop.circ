@@ -64,6 +64,7 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="R"/>
     </comp>
+    <comp lib="0" loc="(340,490)" name="POR"/>
     <comp lib="0" loc="(570,280)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -76,16 +77,21 @@
       <a name="label" val="QBar"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(430,280)" name="NOR Gate"/>
+    <comp lib="1" loc="(430,280)" name="NOR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
     <comp lib="1" loc="(430,390)" name="NOR Gate"/>
     <wire from="(290,260)" to="(370,260)"/>
     <wire from="(300,410)" to="(370,410)"/>
     <wire from="(320,330)" to="(320,370)"/>
     <wire from="(320,330)" to="(550,330)"/>
     <wire from="(320,370)" to="(370,370)"/>
+    <wire from="(340,490)" to="(360,490)"/>
     <wire from="(350,300)" to="(350,350)"/>
     <wire from="(350,300)" to="(370,300)"/>
     <wire from="(350,350)" to="(540,350)"/>
+    <wire from="(360,280)" to="(360,490)"/>
+    <wire from="(360,280)" to="(370,280)"/>
     <wire from="(430,280)" to="(550,280)"/>
     <wire from="(430,390)" to="(540,390)"/>
     <wire from="(540,350)" to="(540,390)"/>
