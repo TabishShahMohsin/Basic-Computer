@@ -68,10 +68,7 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="R"/>
     </comp>
-    <comp lib="0" loc="(230,560)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Reset"/>
-    </comp>
+    <comp lib="0" loc="(360,560)" name="POR"/>
     <comp lib="0" loc="(830,290)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -84,9 +81,9 @@
       <a name="label" val="QBar"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(310,560)" name="NOT Gate"/>
     <comp lib="1" loc="(380,270)" name="NAND Gate"/>
     <comp lib="1" loc="(380,460)" name="NAND Gate"/>
+    <comp lib="1" loc="(400,560)" name="NOT Gate"/>
     <comp lib="1" loc="(590,290)" name="NAND Gate"/>
     <comp lib="1" loc="(600,440)" name="NAND Gate">
       <a name="inputs" val="3"/>
@@ -94,16 +91,16 @@
     <wire from="(220,250)" to="(320,250)"/>
     <wire from="(230,350)" to="(280,350)"/>
     <wire from="(230,480)" to="(320,480)"/>
-    <wire from="(230,560)" to="(280,560)"/>
     <wire from="(280,290)" to="(280,350)"/>
     <wire from="(280,290)" to="(320,290)"/>
     <wire from="(280,350)" to="(280,440)"/>
     <wire from="(280,440)" to="(320,440)"/>
-    <wire from="(310,560)" to="(420,560)"/>
+    <wire from="(360,560)" to="(370,560)"/>
     <wire from="(370,270)" to="(380,270)"/>
     <wire from="(370,460)" to="(380,460)"/>
     <wire from="(380,270)" to="(530,270)"/>
     <wire from="(380,460)" to="(540,460)"/>
+    <wire from="(400,560)" to="(420,560)"/>
     <wire from="(420,440)" to="(420,560)"/>
     <wire from="(420,440)" to="(540,440)"/>
     <wire from="(460,310)" to="(460,370)"/>
