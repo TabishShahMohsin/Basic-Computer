@@ -31,6 +31,7 @@
 * This project can be later extended to make the processor for [Apple 1](http://visual6502.org/).
 * If you find any issues, inconsistencies in notation, some logical flaw, or anything worth mentioning, please let me know. Pull requests are always welcomed.
 * CLR is Synchronous, while the reset pin is Asynchronous.
+    * This was later changed to everything being Synch CLR
 * Computer Specifics: Von Neumann Architecture, Accumulator-Based (Leaning toward CISC), Hardwired Control Unit, Isolated I/O, Fixed-Length Instructions, 4K Words (8KB RAM), SISD (Single Instruction Single Data), all registers are falling-edge triggering.
 
 
