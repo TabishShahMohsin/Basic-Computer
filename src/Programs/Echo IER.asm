@@ -5,7 +5,7 @@
 
 / Reserving Addresses and JUMP
 ORG 0
-RES_ADDR, HEX 0     / Location 0: Return address save slot
+RES_ADDR, BUN START / Location 0: Return address save slot
           BUN ISR   / Location 1: Jump to ISR
 
 

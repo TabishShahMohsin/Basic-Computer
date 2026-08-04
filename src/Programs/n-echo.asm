@@ -1,4 +1,4 @@
-/ To echo what is inputed x times
+/ To echo what is inputed n times char by char
 
 
 / Saved Return Address
